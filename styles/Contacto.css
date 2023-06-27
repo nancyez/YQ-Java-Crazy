@@ -1,0 +1,42 @@
+body{
+    background-color: #0E4950; 
+}
+
+h1{
+    color: #fff9f3;
+    text-align: center;
+    font-family: 'Tinos', serif;
+}
+form{
+    text-align: center;  
+}
+
+label{
+    color: #fff9f3;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+button{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: #fff9f3;
+    background-color: #CBA609;
+    text-align: center;
+}
+
+#user{
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+}
+#email{
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+}
+#mensaje{
+    width: 220px;
+    height: 200px;
+    border-radius: 5px;
+}
