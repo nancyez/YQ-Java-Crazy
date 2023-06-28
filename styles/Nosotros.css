@@ -1,7 +1,5 @@
 body {
-
     background-color: #ECDBC9;
-
 }
 
 h1 {
@@ -10,11 +8,7 @@ h1 {
     font-family: 'Tinos', serif;
 }
 
-#P1 {
-    color: aqua;
-}
-
-h2 {
+#P1{
     font-family: 'Montserrat', sans-serif;
     color: black;
     text-align: right;
@@ -23,17 +17,29 @@ h2 {
 #Nosotros {
     width: 500px;
     display:grid;
+    justify-content: left;
+    align-items: left;
+}
+
+#P2 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: left;
+}
+
+#Fruta1 {
+    width: 400px;
+    display:flex;
+    place-items: right;
+    justify-content: right;
+    align-items: right;
+}
+
+#P3{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#RecolectandoFruta {
-    width: 400px;
-    display:grid;
-    place-items: center;
-}
-
-#Fruta {
-    width: 300px;
-    overflow: hidden;
 }
