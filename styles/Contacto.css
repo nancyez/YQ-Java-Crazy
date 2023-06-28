@@ -14,7 +14,7 @@ form{
 
 label{
     color: #fff9f3;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 button{
@@ -24,6 +24,8 @@ button{
     color: #fff9f3;
     background-color: #CBA609;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 #user{
