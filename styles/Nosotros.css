@@ -20,7 +20,7 @@ h1 {
     display:grid;
     justify-content: left;
     align-items: left;
-    border-radius: 0%;
+    border-radius: 10%;
 }
 
 #P2 {
@@ -36,6 +36,7 @@ h1 {
     place-items: right;
     justify-content: right;
     align-items: right;
+    border-radius: 10%;
 }
 
 #P3{
