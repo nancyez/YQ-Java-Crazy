@@ -6,6 +6,7 @@ h1 {
     color: black;
     text-align: center;
     font-family: 'Tinos', serif;
+    
 }
 
 #P1{
@@ -19,6 +20,7 @@ h1 {
     display:grid;
     justify-content: left;
     align-items: left;
+    border-radius: 0%;
 }
 
 #P2 {
