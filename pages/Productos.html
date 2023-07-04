@@ -3,118 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="stylesheet" href="../styles/Productos.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
     <title>Productos</title>
 </head>
+
 <body>
-    <header class="container">
-       <div class="Navbar">
-        <img class="logo" src="../assest/Logo.png"  width="200px" alt="" />
-        <hr class="new1"  >
-       
-      
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="../assest/menu.png" width="30px" alt=""></label>
-        <nav class="menu">
-          <ul>
-            <li><a href="../pages/Navbar.html"><img src="../assest/casa.png" width="25px" alt=""></a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Recetas</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="">Contactanos</a></li>
-            <li><span><img src="../assest/carrito-de-compras.png" width="25px"></span></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-
-    <header class="productos">
-        
-        <h1 class="titulo-pagina">Productos</h1>
-        
-        <h1 class="titulo-producto">Mermeladas</h1>
-        <section class="contenedor">
-            
-            <div class="contenedor-items">
-                
-                <div class="item">
-                    
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt=""   class="img-item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-            </div>
-        </section>
-        
-        
-        <h1 class="titulo-producto">Almibares</h1>
-        
-        <section class="contenedor">
-            <div class="contenedor-items">
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-            </div>
-        </section>
-        <br>
-        <h1 class="titulo-producto">Licores</h1>
-        <br>
-        <section class="contenedor">
-            <div class="contenedor-items">
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Mermelada de pera</span>
-                    <img src="../assest/PhotoRoom-20230619_152253.png" alt="" class="img-item">
-                    <span class="precio-item">$100.00</span>
-                    <button class="botton-item">Agregar al carrito</button>
-                </div>
-            </div>
-        </section>
-    </header>
+    <h1>Productos</h1>
     
+    <div class="card" style="width: 400px; height: auto;">
+        <img src="../assest/img/ImgProductos/MermeladaCiruela.png" class="card-img-top" alt="Mermelada Ciruela">
+        <div class="card-body">
+          <h5 class="card-title">Mermelada de Ciruela</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$90</li>
+          <li class="list-group-item">Estrellas</li>
+        </ul>
+        <div class="card-body">
+          <button> Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" style="width: 400px; height: auto;">
+        <img src="../assest/img/ImgProductos/MermeladaFrambuesa.png" class="card-img-top" alt="Mermelada Frambuesa">
+        <div class="card-body">
+          <h5 class="card-title">Mermelada de Frambuesa</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$90</li>
+          <li class="list-group-item">Estrellas</li>
+        </ul>
+        <div class="card-body">
+          <button> Agregar al carrito</button>
+        </div>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>   
+
 </body>
 </html>
