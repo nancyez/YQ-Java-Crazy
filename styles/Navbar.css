@@ -18,6 +18,9 @@ body{
     text-align: center;
     background-color: #0E4950;
 }
+.logo{
+    justify-content: center;
+}
 
 hr.new1 {
     border: 1px solid  #CBA609;
