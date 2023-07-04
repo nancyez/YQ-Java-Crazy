@@ -1,3 +1,4 @@
+
 body{
    
     background-size:contain;
@@ -11,6 +12,7 @@ body{
 
 
 #navbarNav,.container{
+    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -23,6 +25,7 @@ hr.new1 {
   
 
 header {
+    position:sticky;
     width: 100%;
     background: #0E4950;
 }
@@ -93,4 +96,14 @@ header label:hover {
     #btn-menu:checked ~ .menu {
         margin: 0;
     }
+}
+/*Productos*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+
 }
