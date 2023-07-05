@@ -1,6 +1,4 @@
-/*Navbar*/
-
-
+/*Navbar Styles*/
 body{
    
     background-size:contain;
@@ -103,7 +101,8 @@ header label:hover {
         margin: 0;
     }
 }
-/*Productos*/
+
+/*Productos Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
 
@@ -116,7 +115,7 @@ header label:hover {
 
 .productos {
     
-    background: url(../assest/Volcan.jpeg);
+    background: url(../assest/img/Volcan.jpeg);
     background-size:cover;
     background-position:center;
     width: 100%;
