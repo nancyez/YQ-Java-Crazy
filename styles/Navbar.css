@@ -26,6 +26,12 @@ body{
 hr.new1 {
     border: 1px solid  #CBA609;
   }
+a .icon:hover{
+    
+    scale: 1.2;
+    transition: 0.3s;
+    
+}
   
 
 .Navbar {
@@ -67,10 +73,12 @@ header label:hover {
 }
 
 .menu li a {
+    
     display: block;
-    padding: 15px 20px;
+    padding: 15px 25px;
     color: #fff;
     text-decoration: none;
+    font-size: 19px;
 }
  li a:hover {
     color: #CBA609;
@@ -101,6 +109,7 @@ header label:hover {
         margin: 0;
     }
 }
+
 
 /*Productos*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
