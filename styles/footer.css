@@ -14,11 +14,13 @@
 
 .footer-title {
   margin-bottom: 2px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
-.footer-title-poppins {
-  font-family: 'Poppins', sans-serif;
-  
+.numerfoot{
+  font-family: 'Poppins';
+  color: white;
 }
 
 .footer-icons {
@@ -36,19 +38,17 @@
   padding: 0; 
 }
 
-.footer-icons a svg {
-  width: 30px; /* Ancho de 30 píxeles para los elementos SVG */
+
+
+svg{
+
+width: 30px; /* Ancho de 30 píxeles para los elementos SVG */
   height: 30px; /* Altura de 30 píxeles para los elementos SVG */
   fill:goldenrod; /* Color de relleno de los elementos SVG */
   stroke: goldenrod; /* Color del contorno de los elementos SVG */
   stroke-width: 0.5px; /* Ancho del contorno de los elementos SVG */
   transition: stroke 0.3s ease, transform 0.3s ease; /* Transición suave de 0.3 segundos para los cambios en el color del contorno y en las transformaciones */
-  margin:15px; /* Margen de 20 píxeles para los elementos SVG */
-}
-
-.footer-icons a:hover svg {
-  stroke: #fbff00; /* Color de trazo cuando se realiza "hover" */
-  transform: scale(1.2); /* Efecto de escala para hacer que el icono se agrande ligeramente */
+  margin:15px;
 }
 
 .footer-links {
@@ -88,5 +88,12 @@
     flex-direction: column;
     align-items: center;
   }
-}
+  }
+  .footerIconos{
+  
+    height: 35px;
+
+
+  }
+
 
