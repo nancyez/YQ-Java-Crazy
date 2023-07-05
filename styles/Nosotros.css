@@ -6,32 +6,34 @@ h1 {
     color: black;
     text-align: center;
     font-family: 'Tinos', serif;
-    
+    font-size: xx-large;
 }
 
 #P1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
     text-align: right;
 }
 
 #Nosotros {
-    width: 500px;
-    display:grid;
+    max-width:100%; 
+    height: auto;
+    display:flex;
     justify-content: left;
     align-items: left;
     border-radius: 10%;
 }
 
 #P2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
-    text-align: right;
+    text-align: left;
 
 }
 
-#Fruta1 {
-    width: 400px;
+#Fruta {
+    max-width:100%; 
+    height: auto;
     display:flex;
     place-items: right;
     justify-content: right;
@@ -40,10 +42,18 @@ h1 {
 }
 
 #P3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    display: flex;
+    max-width:100%; 
+    height: auto;
     justify-content: center;
     align-items: center;
 }
