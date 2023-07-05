@@ -1,4 +1,4 @@
-
+/*Navbar Styles*/
 body{
    
     background-size:contain;
@@ -12,12 +12,13 @@ body{
 
 
 #navbarNav,.container{
-    
+      
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #0E4950;
 }
+
 .logo{
     justify-content: center;
 }
@@ -27,8 +28,8 @@ hr.new1 {
   }
   
 
-header {
-    position:sticky;
+.Navbar {
+  position:fixed;
     width: 100%;
     background: #0E4950;
 }
@@ -100,6 +101,7 @@ header label:hover {
         margin: 0;
     }
 }
+
 /*Productos*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
