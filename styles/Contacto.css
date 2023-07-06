@@ -1,45 +1,106 @@
-body{
-    background-color: #0E4950; 
-}
+/* */
 
-h1{
-    color: #fff9f3;
-    text-align: center;
-    font-family: 'Tinos', serif;
-}
-form{
-    text-align: center; 
-    text-align: center; 
-}
 
-label{
-    color: #fff9f3;
+
+body {
+    background-color: #ECDBC9;
+    color: #0E4950;
+    line-height: 1.6;
     font-family: 'Poppins', sans-serif;
+   
+}
+/*.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5px;
+}
+*/
+
+div.content{
+    padding-top: 150px ;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.logo1 {
+    color: #0E4950;
+    text-align: center;
+
+    font-size: 3em;
+
+}
+h3{
+    text-align: center;
+}
+.contacto-agrupado > * {
+    box-shadow: 0px 0px 20px 0px #CBA609; /* #0E4950*/
+    border-radius: 25px;
+    padding: 1px;
     
 }
-button{
-    border-radius: 5px;
-    width: 100px;
-    height: 40px;
-    color: #fff9f3;
-    background-color: #CBA609;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+
+.contact-form {
+    background: #fff9f3;
 }
 
-#user{
-    width: 220px;
-    height: 50px;
-    border-radius: 5px;
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-#email{
-    width: 220px;
-    height: 50px;
-    border-radius: 5px;
+
+.contact-form form label {
+    display: block;
 }
-#mensaje{
-    width: 220px;
-    height: 200px;
-    border-radius: 5px;
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #0E4950;
+    border-bottom: 1px solid #CBA609;
+}
+
+.contact-form form button {
+    background: #CBA609;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #0E4950;
+    color: #CBA609;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* Tamaño formulario */
+@media(min-width: 768px) {
+    div .content {
+        width: 100%;
+    }
+    .contacto-agrupado {
+        display: grid;
+    }
+    .contacto-agrupado > * {
+        padding: 2em;
+    }
+    /*.NavBar{
+        display: grid;
+    }*/
+    
 }

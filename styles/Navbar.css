@@ -1,4 +1,14 @@
 /*Navbar Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+
+}
+
 body{
    
     background-size:contain;
@@ -112,12 +122,3 @@ header label:hover {
 
 
 /*Productos*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-
-}
