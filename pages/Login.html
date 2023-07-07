@@ -3,45 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Login.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
-    <title>Mi cuenta </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/Login.css">
+    <title>Login</title>
 </head>
-
-
 <body>
+    <div class="login">
 
-    <div class="sesion">
-        <div class="sesion-form">
-             <form action="Iniciar sesión">
-                 <h1>Inicio de sesión</h1>
-                 <br>
-                 <label for="email">Email</label>
-                 <input type="email" required placeholder="Escribe tu correo electronico"/>
-                 <br>
-                 <br>
-                 <label for="password">Contraseña</label>
-                 <input type="password" required placeholder="Escribe tu contraseña"/>
-                 <br>
-                 <br>
-                 <input type="radio">
-                 <label for="radio">Recuerdame</label>
-                 <br>
-                 <br>
-                 <a href="">¿Olvidaste tu contraseña?</a>
-                <input type="button" value="Iniciar sesión">
-                <h3>¿No tienes cuenta?</h3>
-                <a href="">Registrate</a>
-                <p>o</p>
-                <input type="button" value="Continuar con Google">
-            </form>
         </div>
+        <form class="form">
+            <h1>Inicia sesión</h1>
+                    
+            <div class="form_container">
+            
+                <div class="form_group">
+                    <input type="text" id="email" class="form_input" placehol>
+                    <label for="email" class="form_label">Correo electronico</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="password" id="password" class="form_input" placehol>
+                    <label for="password" class="form_label">Contraseña</label>
+                    <span class="form_line"></span>
+                </div>
+                <input type="submit" class="form_submit" value="Entrar" >
+            </div>
+            <p class="form_paragraph">¿Aún no tienes una cuenta?</p><a href="">Registrate</a>
+        </form>
+
+        <div class="img_container">
+            <img src="../assest/img/cuenta/fruta.jpeg" width="339" alt="fruta">
+        </div>
+
     </div>
     
-
-
 </body>
 </html>
