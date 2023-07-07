@@ -2,43 +2,40 @@ body {
     background-color: #ECDBC9;
 }
 
+@media (max-width:768px) {
+    header label {
+        display: block;
+    }
+}   
+
 h1 {
     color: black;
     text-align: center;
     font-family: 'Tinos', serif;
-    font-size: xx-large;
+    font-size: bolder;
 }
+
+#Nosotros {
+    max-width: 100%; 
+    height: auto;
+    display:flex;
+    justify-content: center;
+    border-radius: 20%;
+    text-align: center;
+   }
 
 #P1{
     font-family: 'Poppins', sans-serif;
     color: black;
-    text-align: right;
-}
-
-#Nosotros {
-    max-width:100%; 
-    height: auto;
-    display:flex;
-    justify-content: left;
-    align-items: left;
-    border-radius: 10%;
+    text-align: center;
 }
 
 #P2 {
     font-family: 'Poppins', sans-serif;
     color: black;
     text-align: left;
-
-}
-
-#Fruta {
-    max-width:100%; 
-    height: auto;
-    display:flex;
-    place-items: right;
-    justify-content: right;
-    align-items: right;
-    border-radius: 10%;
+    max-width: 100%; 
+    height: auto
 }
 
 #P3{
@@ -48,12 +45,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%; 
+    height: auto
 }
 
-.text-center{
-    display: flex;
-    max-width:100%; 
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
