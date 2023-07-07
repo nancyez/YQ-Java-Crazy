@@ -8,38 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
-    <title>Mi cuenta</title>
+    <title>Mi cuenta </title>
 </head>
+
+
 <body>
 
-    <div class="container">
-        <form>
-            <h1>Inicio de sesión</h1>
-            <br>
-            <input type="email" required placeholder="Escribe tu correo electronico"/>
-            <br>
-            <br>
-            <input type="password" required placeholder="Escribe tu contraseña"/>
-            <br>
-            <br>
-            <input type="radio">
-            <label for="radio">Recuerdame</label>
-            <br>
-            <br>
-            <a href="">¿Olvidaste tu contraseña?</a>
-            <input type="button" value="Iniciar sesión">
-        </form>
+    <div class="sesion">
+        <div class="sesion-form">
+             <form action="Iniciar sesión">
+                 <h1>Inicio de sesión</h1>
+                 <br>
+                 <label for="email">Email</label>
+                 <input type="email" required placeholder="Escribe tu correo electronico"/>
+                 <br>
+                 <br>
+                 <label for="password">Contraseña</label>
+                 <input type="password" required placeholder="Escribe tu contraseña"/>
+                 <br>
+                 <br>
+                 <input type="radio">
+                 <label for="radio">Recuerdame</label>
+                 <br>
+                 <br>
+                 <a href="">¿Olvidaste tu contraseña?</a>
+                <input type="button" value="Iniciar sesión">
+                <h3>¿No tienes cuenta?</h3>
+                <a href="">Registrate</a>
+                <p>o</p>
+                <input type="button" value="Continuar con Google">
+            </form>
+        </div>
     </div>
-    <br>
-    <br>
-    <div>
-        <h3>¿No tienes cuenta?</h3>
-        <a href="">Registrate</a>
-        <p>o</p>
-        <input type="button" value="Continuar con Google">
-    </div>
-
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

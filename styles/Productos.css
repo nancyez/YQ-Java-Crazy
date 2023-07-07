@@ -1,4 +1,4 @@
-/*Navbar Styles*/
+/*Navbar Styles
 body{
    
     background-size:contain;
@@ -26,6 +26,12 @@ body{
 hr.new1 {
     border: 1px solid  #CBA609;
   }
+a .icon:hover{
+    
+    scale: 1.2;
+    transition: 0.3s;
+    
+}
   
 
 .Navbar {
@@ -67,10 +73,12 @@ header label:hover {
 }
 
 .menu li a {
+    
     display: block;
-    padding: 15px 20px;
+    padding: 15px 25px;
     color: #fff;
     text-decoration: none;
+    font-size: 19px;
 }
  li a:hover {
     color: #CBA609;
@@ -101,8 +109,8 @@ header label:hover {
         margin: 0;
     }
 }
-
-/*Productos Styles*/
+*/
+/*Productos*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
 
@@ -129,15 +137,15 @@ header label:hover {
 .titulo-pagina{
     
     text-align: center;
-    font-size: calc(1.6em + 6vw);
+    font-size: calc(1.2em + 6vw);
     color: #fff;
     padding: 65px 30px;
 }
 .titulo-producto{
     text-align:center;
-    font-size: calc(1.6em + 6vw);
-    color: #fff;
-    padding: 80px 30px;
+    font-size: calc(1.2em + 6vw);
+    color: #0E4950;
+    padding: 50px 30px;
 
 }
 
@@ -172,7 +180,8 @@ header h1{
 }
 
 .contenedor .contenedor-items .item{
-    max-width: 250px;
+    max-width: 230px;
+    
     margin: auto;
     border: 1px solid #666;
     border-radius: 30px;
@@ -182,19 +191,21 @@ header h1{
 }
 .contenedor-items .item:hover{
     box-shadow:  0 0 10px #666;
-    scale: 1.05;
+    /*scale: 1.05;*/
     
 }
 .contenedor-items .item .img-item{
-    width: 100%;
-    height: 235px;
+    width:100%;
+    height:235px;
+    
 }
 
 .contenedor-items .item .titulo-item{
-    display: block;
+    display:block;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    
 }
 .contenedor-items .item .precio-item{
     display: block;
@@ -217,3 +228,4 @@ header h1{
     font-size: 16px;
     cursor: pointer;
 }
+
