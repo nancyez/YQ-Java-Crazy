@@ -1,0 +1,99 @@
+
+/* ============================================Footer======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.footer {
+  background-color: #0E4950;
+  padding: 2px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-title {
+  margin-bottom: 2px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.numerfoot{
+  font-family: 'Poppins';
+  color: white;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.footer-icons a {
+  color: white;
+  border: none;
+  padding: 0; 
+}
+
+
+
+svg{
+
+width: 30px; /* Ancho de 30 píxeles para los elementos SVG */
+  height: 30px; /* Altura de 30 píxeles para los elementos SVG */
+  fill:goldenrod; /* Color de relleno de los elementos SVG */
+  stroke: goldenrod; /* Color del contorno de los elementos SVG */
+  stroke-width: 0.5px; /* Ancho del contorno de los elementos SVG */
+  transition: stroke 0.3s ease, transform 0.3s ease; /* Transición suave de 0.3 segundos para los cambios en el color del contorno y en las transformaciones */
+  margin:15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  flex-basis: 30%;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-subtext {
+  display: block;
+  margin-top: 0px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  .footerIconos{
+  
+    height: 35px;
+
+
+  }
+
+
