@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,9 @@
 
 .productos {
     
-    background: url(../assest/img/Volcan.jpeg);
+<
+    background: <a src:../assest/img/peras.jpg></a>
+
     background-size:cover;
     background-position:center;
     width: 100%;
@@ -65,15 +68,20 @@ header h1{
 }
 
 .contenedor .contenedor-items .item{
-    max-width: 230px;
+
+    max-width: 280px;
+
     
     margin: auto;
     border: 1px solid #666;
     border-radius: 30px;
-    padding: 20px 60px;
+=
+    
     transition: .3s;
     background: #A4C2CB;
 }
+
+
 .contenedor-items .item:hover{
     box-shadow:  0 0 10px #666;
     /*scale: 1.05;*/
@@ -82,6 +90,9 @@ header h1{
 .contenedor-items .item .img-item{
     width:100%;
     height:235px;
+
+    border-radius: 30px 30px 0 0;
+
     
 }
 
@@ -90,13 +101,17 @@ header h1{
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    
+
+    font-size: 22px;
+
 }
 .contenedor-items .item .precio-item{
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
+
+    font-size:12px;
+
     margin: 10px auto;
     border: none;
 }
@@ -106,11 +121,14 @@ header h1{
     margin: 10px auto;
     border:none;
     background:#837710;
-    border-radius: 10px;
+
+    border-radius: 10px ;
     color: #fff;
-    width: 100%;
+    width: 50%;
+
     padding: 5px 15px;
     font-size: 16px;
     cursor: pointer;
 }
+
 

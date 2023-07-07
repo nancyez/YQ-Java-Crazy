@@ -19,10 +19,7 @@ body {
     padding: 1.5px;
 }
 
-.logo {
-    color: #0E4950;
-    text-align: center;
-    font-size: 3em;
+
 }
 
 .contacto-agrupado > * {
@@ -33,6 +30,7 @@ body {
 
 .contact-form {
     background: #fff9f3;
+    min-width: 300px;
 }
 
 .contact-form form {
@@ -81,11 +79,12 @@ body {
 }
 
 /* Tamaño formulario */
-@media(min-width: 800px) {
+@media(min-width: 768px) {
     body {
-        padding: 0 4em;
+        padding: 0;
         
     }
+    
     .contacto-agrupado {
         display: grid;
         grid-template-columns: 1fr;
