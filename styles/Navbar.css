@@ -33,13 +33,17 @@ body{
     justify-content: center;
 }
 
+.logo:hover{
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+
 hr.new1 {
     border: 1px solid  #CBA609;
   }
 a .icon:hover{
     
-    scale: 1.2;
-    transition: 0.3s;
+    
     
 }
   
