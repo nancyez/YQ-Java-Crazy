@@ -1,41 +1,120 @@
-.sesion-form {
+*{
+    margin: 0%;
+    padding: 0;
+   
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECDBC9;
+    background-position: 0 0, 10px 10px;
+    display: flew;
+    min-height: 100vh;
     color: #0E4950;
-    line-height: 1.6;
-    font-family:'Poppins', sans-serif;
-    background-color: #fff9f3;
+}
+.login{
+     padding-top: 200px ;
+     
+}
+.form{
+   
+    background-color:#FFF9F3;
+    margin: 0% 10% 10% 35%;
+    width: auto;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #CBA609;
+    text-align: center;
+     
 }
 
-form{
-    box-shadow: 0px 0px 20px 0px #CBA609 ;
+h1{
+    font-size: 2rem;
+    margin-bottom:.5rem;
+    color:#0E4950
 }
 
-.content {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5px;
+.form_paragraph{
+    font-weight: 300;
 }
 
-input{
+a{
+    font-weight: 300;
+    color:#0E4950;
+}
+
+.form_container{
+    margin: 2em;
+    display: grid;
+    gap:2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color:#0E4950;
+}
+
+.form_input{
     width: 100%;
-    padding: .7em;
-    border: none;
     background: none;
-    outline: 0;
     color: #0E4950;
-    border-bottom: 1px solid #CBA609;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Poppins', sans-serif;
 }
 
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #0E4950;
+}   
 
 
-/*Tamaño formulario*/
-@media(min-width:800px){
-    body{
-        padding: 0 4em;
-    }
-    .sesion-form{
-        display: grid;
-        padding: 2em;
-    }
-    
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 5px;
+    transform:translateY(10px) ;
+    transition: transform .5s, color .3s;
+    font-size: 20px;
 }
+
+.form_submit{
+    background:#CBA609 ;
+    color: #FFF9F3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+/*.form_line{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:1px;
+    background-color:#CBA609 ;
+}*/
+
+@media(max-width:768px){
+    h1{
+        font-size: 1.8rem;
+    }
+}
+
+.img_container{
+    position:absolute;
+    top:180px;
+    left:967px;
+}
+

@@ -183,14 +183,14 @@ header h1{
     max-width: 230px;
     
     margin: auto;
-    border: 1px solid #666;
+    border: none;
     border-radius: 30px;
     padding: 20px 60px;
     transition: .3s;
-    background: #A4C2CB;
+    background: #fff9f3;
 }
 .contenedor-items .item:hover{
-    box-shadow:  0 0 10px #666;
+    box-shadow:  0 0 10px #CBA609;
     /*scale: 1.05;*/
     
 }
@@ -227,5 +227,11 @@ header h1{
     padding: 5px 15px;
     font-size: 16px;
     cursor: pointer;
+    
 }
-
+.contenedor-items .item .botton-item:active {
+        transform: scale(0.98);
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        /* Lowering the shadow */
+}
