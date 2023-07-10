@@ -71,14 +71,12 @@ header h1{
 
     max-width: 280px;
 
-    
     margin: auto;
-    border: 1px solid #666;
+    border: none;
     border-radius: 30px;
 =
-    
     transition: .3s;
-    background: #A4C2CB;
+    background: #fff9f3;
 }
 
 

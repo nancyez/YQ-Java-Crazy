@@ -183,14 +183,14 @@ header h1{
     max-width: 230px;
     
     margin: auto;
-    border: 1px solid #666;
+    border: none;
     border-radius: 30px;
     padding: 20px 60px;
     transition: .3s;
-    background: #A4C2CB;
+    background: #fff9f3;
 }
 .contenedor-items .item:hover{
-    box-shadow:  0 0 10px #666;
+    box-shadow:  0 0 10px #CBA609;
     /*scale: 1.05;*/
     
 }
