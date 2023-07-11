@@ -31,7 +31,11 @@ body{
 
 .logo{
     justify-content: center;
-}
+  }  
+.logo:hover{
+        scale: 1.05;
+        transition-duration: 0.5s;
+    }
 
 hr.new1 {
     border: 1px solid  #CBA609;
@@ -119,6 +123,5 @@ header label:hover {
         margin: 0;
     }
 }
-
 
 /*Productos*/

@@ -1,4 +1,130 @@
-body {
+/*Navbar Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+
+}
+
+body{
+   
+    background-size:contain;
+    background-color: #ECDBC9;
+    background-repeat:initial;
+    background-position: center;
+    position:relative;
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+
+#navbarNav,.container{
+      
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0E4950;
+}
+
+.logo{
+    justify-content: center;
+  }  
+.logo:hover{
+        scale: 1.05;
+        transition-duration: 0.5s;
+    }
+
+hr.new1 {
+    border: 1px solid  #CBA609;
+  }
+a .icon:hover{
+    
+    scale: 1.2;
+    transition: 0.3s;
+    
+}
+  
+
+.Navbar {
+  position:fixed;
+    width: 100%;
+    background: #0E4950;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #CBA609;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu li{
+    
+    text-align: center;
+    flex-grow: 1;
+}
+
+.menu li a {
+    
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+ li a:hover {
+    color: #CBA609;
+    text-decoration: none;
+    }
+
+@media (max-width:768px) {
+    header label {
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #0E4950;
+        width: 70%;
+        margin-left: -70%;
+        transition:all 1.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+/*body {
    
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,7 +134,7 @@ body {
     background: #ECDBC9;
 }
 
-/*@media (max-width:768px) {
+@media (max-width:768px) {
     #container {
         display: grid;
         flex-direction: column;
@@ -22,7 +148,9 @@ body {
       max-width: 100%;
     }
 }
-
+div .inicio-div{
+    padding-top: 300px ;
+}
 @media (max-width: 425px) {
     #Nosotros img,
     #P2 .RecolectandoFruta img,
@@ -94,7 +222,8 @@ h1 {
     overflow: hidden;
     justify-items: center;
     object-position: 50%;*/
-    height: 150px;
+    width: 50%;
+    height: 50%;
     padding-left: 1em;
 }
 

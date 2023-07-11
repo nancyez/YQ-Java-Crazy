@@ -1,10 +1,3 @@
-
-/* */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #ECDBC9;
     color: #0E4950;
@@ -12,19 +5,24 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 0 1.5px;
 }
-.container {
+/*.container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5px;
-}
+}*/
 
-.logo {
+div.content{
+    padding-top: 165px ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.logo1 {
     color: #0E4950;
     text-align: center;
-    font-size: 3em;
-}
 
+    font-size: 2.5em;
+}
 .contacto-agrupado > * {
     box-shadow: 0px 0px 20px 0px #CBA609; /* #0E4950*/
     border-radius: 25px;
@@ -33,6 +31,7 @@ body {
 
 .contact-form {
     background: #fff9f3;
+    min-width: 300px;
 }
 
 .contact-form form {
@@ -48,10 +47,7 @@ body {
     margin: 0;
     padding: 1em;
 }
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
+
 
 .contact-form form button,
 .contact-form form input,
@@ -81,11 +77,12 @@ body {
 }
 
 /* Tamaño formulario */
-@media(min-width: 800px) {
+@media(min-width: 768px) {
     body {
-        padding: 0 4em;
+        padding: 0;
         
     }
+    
     .contacto-agrupado {
         display: grid;
         grid-template-columns: 1fr;
