@@ -107,9 +107,6 @@ a{
     h1{
         font-size: 1.8rem;
     }
-    .login{
-       display: flex;
-    }
 }
 
 .img_container{
