@@ -38,7 +38,7 @@ body{
     }
 
 hr.new1 {
-    border: 1px solid  #CBA609;
+    border: 2px solid  #CBA609;
   }
 a .icon:hover{
     
@@ -160,7 +160,7 @@ div .inicio-div{
   }*/
   
   *{
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
 }
@@ -172,12 +172,13 @@ div .inicio-div{
 
 body{
     width: 100vw;
-    padding: 1rem;
+    /*padding: 1rem;*/
     background-color: var(--bgColor);
     font-family: "Poppins",sans-serif;
 }
 
 .cards{
+padding: 1rem;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax (120px, 1fr));
 gap: 1rem;

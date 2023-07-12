@@ -13,8 +13,11 @@
     height: 300px;
     padding-top: 120px;
     object-fit: cover;
-    object-position: bottom;   
+    object-position: bottom;
+    
+    
 }
+
 .titulo-pagina{
     
     text-align: center;
@@ -67,7 +70,7 @@ header h1{
     margin: auto;
     border: none;
     border-radius: 30px;
-
+=
     transition: .3s;
     background: #fff9f3;
 }
