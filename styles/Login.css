@@ -7,16 +7,21 @@ body{
 }
 
 .bg{
-    background-image: url(../assest/img/cuenta/loginV2.jpeg);
+    background-image: url(../assest/img/fruta.jpeg);
     background-position: center;
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
     background-repeat: no-repeat;
     width:5;
 }
+.seccion{
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
+
 
 .row{
-    margin-top:50px; /*Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
+    /*margin-top:50px; Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
     box-shadow:0px 0px 20px 0px #CBA609;
     border-radius: 25px;
     background:#fff9f3;
@@ -35,12 +40,20 @@ body{
     border:1px solid #CBA609;
 }
 
-.btn-button:hover, .btn-button:focus{
+#boton{
+    background: #CBA609;
+    color:#0e4950;
+    border: none;
+}
+
+#boton:hover, #boton:focus{
     background: #0e4950;
     color: #CBA609;
     transition:background-color 1s ease-out;
     outline: 0;
 }
 
-
+a{
+    color: #0e4950;
+}
 
