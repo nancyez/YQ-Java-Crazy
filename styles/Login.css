@@ -40,8 +40,13 @@ body{
     border:1px solid #CBA609;
 }
 
-.btn-button:hover,
-.btn-button:focus{
+#boton{
+    background: #CBA609;
+    color:#0e4950;
+    border: none;
+}
+
+#boton:hover, #boton:focus{
     background: #0e4950;
     color: #CBA609;
     transition:background-color 1s ease-out;
