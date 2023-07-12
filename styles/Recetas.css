@@ -123,3 +123,47 @@ header h1{
     font-size: 16px;
     cursor: pointer;
 }
+.letro{
+    font-size: medium;
+   color: #fff;
+    
+}
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    /* Estilos para la barra de navegación */
+    .Navbar {
+      /* Agrega los estilos que deseas para la barra de navegación en pantallas grandes */
+    }
+    
+    /* Estilos para los elementos de las recetas */
+    .item {
+      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas grandes */
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (max-width: 767px) {
+    /* Estilos para la barra de navegación */
+    .Navbar {
+      /* Agrega los estilos que deseas para la barra de navegación en pantallas medianas */
+    }
+    
+    /* Estilos para los elementos de las recetas */
+    .item {
+      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    /* Estilos para la barra de navegación */
+    .Navbar {
+      /* Agrega los estilos que deseas para la barra de navegación en pantallas pequeñas */
+    }
+    
+    /* Estilos para los elementos de las recetas */
+    .item {
+      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
+    }
+  }
+  
