@@ -1,10 +1,113 @@
-body{
-  background-color: #ECDBC9; 
+/* Carrusel */
+.carrousel{
+  width:90%;
+  max-width: 100%;
+  padding:2em;
+  overflow: hidden;
+
 }
-.img-fluid{
-  display: fluid;
- max-width: 80%;
-  height: auto;
-  padding: 20px 20px 20px 20px;
+.carrousel-slide{
+  width: 200%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
+  padding:2em 0 0 2em;
+
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+.carrousel .img{
+  width: calc( 100% / 2  - 2em);
+  min-height: 10vh;
+  width: 800px;
+  height: 300px;
+}
+.carrousel .flechas{
+  width:100%;
+  margin:1em 0 0;
+  padding:.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: #CBA609;
+}
+.carrousel .flecha{
+  width:  2em;
+  height: 2em;
+  margin: 0;
+  padding: 0 10px 10px;
+  
+}
+
+#Atras{
+  width: 30px;
+  height: auto;
+}
+
+#Adelante{
+  width: 30px;
+  height: auto;
+}
+
+/* imagen popocatepetl*/
+.img-home{
+  width: 100%;
+}
+#img-home {
+  width: 700px;
+  height: auto;
+  margin: auto;
+  display: block;
+  padding: 10px 10px 20px 10px;
+}
+
+/*inicia Swiper productos*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Tinos', serif;
+}
+body{
+  height: 100vh;
+  background-color:blanchedalmond ;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productos-container{
+  padding: 50px 0 150px 0;
+}
+.productos-container h2{
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.swiper{
+  width: 100%;
+}
+.swiper-slide{
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+}
+.swiper-slide img{
+  display: flex;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media(max-width:991px) {
+  body {
+      min-height: 0vh;
+  }
+  .productos-container{
+      padding: 30px;
+  }
 }
