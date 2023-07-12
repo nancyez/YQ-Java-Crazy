@@ -1,7 +1,7 @@
 /* Carrusel */
 .carrousel{
   width:90%;
-  max-width: 100%;
+  max-width: 120em;
   padding:2em;
   overflow: hidden;
 
@@ -13,21 +13,21 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding:2em 0 0 2em;
+  padding:5em 0 0 7em;
+  gap: 11em;
 
-  transition: all .5s ease;
+  transition: all .3s ease;
   transform: translateX(0%);
 }
 .carrousel .img{
   width: calc( 100% / 2  - 2em);
-  min-height: 10vh;
-  width: 800px;
-  height: 300px;
+  min-height: 30vh;
+  width: 1000px;
+  height: 380px;
 }
 .carrousel .flechas{
   width:100%;
-  margin:1em 0 0;
-  padding:.4em;
+  margin:1em 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -37,8 +37,8 @@
 .carrousel .flecha{
   width:  2em;
   height: 2em;
-  margin: 0;
-  padding: 0 10px 10px;
+  padding: 0 0 0 3em;
+  align-items: center;
   
 }
 
@@ -57,7 +57,7 @@
   width: 100%;
 }
 #img-home {
-  width: 700px;
+  width: 1000px;
   height: auto;
   margin: auto;
   display: block;
@@ -71,41 +71,61 @@
   box-sizing: border-box;
   font-family: 'Tinos', serif;
 }
-body{
-  height: 100vh;
-  background-color:blanchedalmond ;
-}
+
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .productos-container{
-  padding: 50px 0 150px 0;
+  padding: 0 0 0 0;
 }
 .productos-container h2{
-  font-size: 25px;
+  font-size: 60px;
   font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
+  color: #0E4950; 
 }
 .swiper{
-  width: 100%;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
 }
 .swiper-slide{
   background-position: center;
   background-size: cover;
-  width: 150px;
+  width: 100%;
 }
 .swiper-slide img{
-  display: flex;
+  display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
+
+.swiper-button-prev{
+  color: #CBA609;
+margin-left: -15%;
+}
+.swiper-button-next{
+  color: #CBA609;
+  margin-right: -15%;
+}
+
+/* Inicia recetas */
+#Recetas-home{
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0E4950;
+
+}
+
 @media(max-width:991px) {
   body {
       min-height: 0vh;
+      display: grid;
   }
   .productos-container{
       padding: 30px;

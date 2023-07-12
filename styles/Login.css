@@ -35,7 +35,8 @@ body{
     border:1px solid #CBA609;
 }
 
-.btn-button:hover, .btn-button:focus{
+.btn-button:hover,
+.btn-button:focus{
     background: #0e4950;
     color: #CBA609;
     transition:background-color 1s ease-out;

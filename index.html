@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!---------------links de animacion swiper------------------>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> 
+    <!---------------link de animacion swiper------------------>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!---------------links styles------------------>
     <link rel="stylesheet" href="./styles/Inicio.css">
     <link rel="stylesheet" href="./styles/Navbar.css">
+    <link rel="stylesheet" href="./styles/Recetas.css">
+    <!---------------link Google fonts ------------------>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
     
     <title>Yolistli Quilpalli</title>
@@ -55,6 +58,9 @@
 </div>
 </section>
 <!------------------------ Termina Carrusel--------------------------------->
+
+<!------------------------ Inicia Foto Popocatepelt--------------------------------->
+
 <section>
       <div class="img-home">
         <img src="./assest/Inicio/Home.jpeg" class="img-fluid" id="img-home"alt="Imagen home">
@@ -62,6 +68,9 @@
 </section>
 
 <section class="productos-container">
+
+<!------------------------ Termina Foto Popocatepelt --------------------------------->
+
         
   <h2>Los más vendidos</h2>
 <!------------------------ Inicia Swiper --------------------------------->
@@ -76,7 +85,7 @@
     <div class="swiper-slide"><img src="./assest/img/ImgProductos/LicorPera.png" alt=""></div>
     <div class="swiper-slide"><img src="./assest/img/ImgProductos/AlmibarPera.png" alt=""></div>
 
-    ...
+
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -90,6 +99,33 @@
 </div>
 </section>
 <!------------------------ Termina Swiper--------------------------------->
+
+<!------------------------ Empieza Recetas--------------------------------->
+
+<h2 id="Recetas-home">Algunas recetas con nuestros productos</h2>
+
+<section class="contenedor">
+  <div class="contenedor-items">
+      <div class="item">
+         <img src="../assest/Recetas/hotcakes.jpeg" alt="" class="img-item">
+          <span class="titulo-item">Hot cakes</span>
+          <span class="precio-item">Exquisitos Hot Cakes bañados con nuestra exquisita.</span>
+          <button class="botton-item"><a class="letro" href="/pages/recetashtml/Hot_cakes.html">Ver más</a></button>
+      </div>
+      <div class="item">
+          <img src="../assest/Recetas/coctel.jpeg" alt="" class="img-item">
+          <span class="titulo-item">Cóctel</span>
+          <span class="precio-item">Refrescante bebida preparada con nuestro licor de fruta natural.</span>
+          <button class="botton-item"><a class="letro" href="/pages/recetashtml/coctel.html">Ver más</a></button>
+      </div>
+      <div class="item">
+          <img src="../assest/Recetas/churros.jpeg" alt="" class="img-item">
+          <span class="titulo-item">churros</span>
+          <span class="precio-item">Para noches y mañanas frescas preparada tus churros con una cobertura de mermelada.</span>
+          <button class="botton-item"><a class="letro" href="/pages/recetashtml/churros.html">Ver más</a></button>
+      </div>
+  </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./src/Inicio.js"></script>
 </body>
