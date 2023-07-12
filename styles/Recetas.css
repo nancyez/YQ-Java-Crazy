@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +6,13 @@
 }
 
 .productos {
-    background: url(../assest/img/Volcan.jpeg);
+  
     background-size:cover;
     background-position:center;
     width: 100%;
     height: 300px;
     padding-top: 120px;
     object-fit: cover;
-    object-position: bottom;    
 }
 
 .titulo-pagina{
@@ -116,7 +113,7 @@ header h1{
     background:#837710;
 
     border-radius: 10px ;
-    color: #fff;
+    color: #fff9f3;
     width: 50%;
 
     padding: 5px 15px;

@@ -31,11 +31,13 @@ flecha.forEach( ( cadaFlecha , i )=> {
 // Inicia JS de Swiper
 
 const swiper = new Swiper('.swiper', {
-    
-    effect: "coverflow",
+
+    effect: "flip",
+    limitRotation: true,
     grabCursor: true,
     centeredSlides:true,
     slidesPerView: "auto",
+    slideShadows: true, 
     coverflowEffect: {
         rotate:15,
         strech:0,
@@ -44,7 +46,7 @@ const swiper = new Swiper('.swiper', {
     },
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
       
     // If we need pagination
     pagination: {
