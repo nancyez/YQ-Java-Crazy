@@ -36,46 +36,48 @@
    </div>
  </header >
 <!--Termina NavBar-->
-<!--Termina NavBar-->
+  
 <header class="seccion">
-<div class="container w-75 mt-1">
-  <div class="row"><!--duda-->
-
-      <!--Se añade la imagen con bg-->
-      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6" id="img-login"><!--Breakpoint es largo o corto aparece o no la imagen-->
-
-      </div class="form-container"><!--Contenedor del formulario-->
-      <div class="col p-5" id="form-col"> <!--del formulario-->
-          <h1 class="fw-bold text-center py-4">Iniciarr Sesión</h1>
-          
-          <!--Inicia formulario-->
-
-          <form action="#"><!--Queda pendiente para conectarlo con la base de datos -->
-              <div class="mb-4">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control-plaintext"  id="form-input" name="email">
-              </div>
-              <div class="mb-4">
-                  <label for="password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control-plaintext"  id="form-input"      name="password">
-              </div>
-              <div class="mb-4">
-                  <input type="checkbox" name="connected" class="form-check-input-" id="checkbox" >
-                  <label for="connected" class="form-check-label">Recordar cuenta</label>
-              </div>
-              <div class="d-grid">
-                  <!--Aqui el cambio de color del botón-->
-                  <button type="submit" class="btn btn-outline-primary" id="boton">Entrar</button>
-              </div>
-                <!--Final del formulario-->
-              <div class="my-3 text-center">
-                  <span>¿Aún no tienes una cuenta?<br><br><a href="">Regístrate</a></span><br><br>
-                  <span><a href="">Recuperar contraseña</a></span>
-              </div>
-          </form>
-      </div>
+  <div class="container w-75 mt-1">
+    <div class="row"><!--duda-->
+  
+        <!--Se añade la imagen con bg-->
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6" id="img-login"><!--Breakpoint es largo o corto aparece o no la imagen-->
+  
+        </div class="form-container"><!--Contenedor del formulario-->
+        <div class="col p-5" id="form-col"> <!--del formulario-->
+            <h1 class=" fw-bold text-center py-4">Iniciar Sesión</h1>
+            
+            <!--Inicia formulario-->
+  
+            <form action="#" method="post" id="form"><!--Queda pendiente para conectarlo con la base de datos -->
+                <div class="mb-4">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control-plaintext"  id="form-input-email" name="email">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control-plaintext"  id="form-input-contra" name="password">
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" name="connected" class="form-check-input" id="checkbox" >
+                    <label for="connected" class="form-check-label">Recordar cuenta</label>
+                </div>
+                <div class="d-grid">
+                    <!--Aqui el cambio de color del botón-->
+                    <button type="submit" class="btn btn-outline-primary" id="boton">Entrar</button>
+                </div>
+                <p class="warnings" id=" warnings"></p>
+                  <!--Final del formulario-->
+                <div class="my-3 text-center">
+                    <span>¿Aún no tienes una cuenta?<br><br><a href="">Regístrate</a></span><br><br>
+                    <span><a href="">Recuperar contraseña</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
   </div>
-</div>
+</header>
 </header>      
 <!--INICIA FOOTER-->
       <!--=======================================================Footer=========================================================================-->

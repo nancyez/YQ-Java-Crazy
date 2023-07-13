@@ -14,11 +14,15 @@ body{
     background-repeat: no-repeat;
     width:5;
 }
+
 .seccion{
     padding-top: 200px;
     padding-bottom: 70px;
 }
 
+h1{
+    font-size: 40px;
+}
 
 .row{
     /*margin-top:50px; Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
@@ -27,7 +31,7 @@ body{
     background:#fff9f3;
 }
 
-#form-input {
+#form-input-email, #form-input-contra{
     background: none;
     color: #0e4950;
     font-size: 1em;
@@ -57,3 +61,10 @@ a{
     color: #0e4950;
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: pink;
+    padding: 20px;
+}
