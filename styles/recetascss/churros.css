@@ -1,78 +1,26 @@
-/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Estilos del encabezado */
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 .img-item {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilos del listado de ingredientes */
-.listado {
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #555;
-}
-
-/* Estilos de las instrucciones */
-ol {
-  list-style-type: decimal;
-  padding-left: 20px;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* Estilos de la tabla */
-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 40px;
+  height: calc(100vh - 80px); /* Calcula el 33% del viewport height y resta 40px para compensar el espacio del encabezado */
+  object-fit: cover;
 }
 
-table td,
-table th {
-  padding: 8px;
-  border: 1px solid #ccc;
+.titulo-pagina {
+  text-align: center;
 }
 
-/* Estilos del enlace */
-a {
-  color: #333;
-  text-decoration: none;
+.listado {
+  margin-top: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+h2, h3 {
+  margin-top: 20px;
+}
+
+ol {
+  margin-left: 20px;
 }

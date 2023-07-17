@@ -1,6 +1,7 @@
 /* Carrusel */
 .carrousel{
   width:90%;
+  position: static;
   max-width: 120em;
   padding:2em;
   overflow: hidden;
@@ -8,7 +9,7 @@
 }
 .carrousel-slide{
   width: 200%;
-  
+  position: static;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -20,6 +21,7 @@
   transform: translateX(0%);
 }
 .carrousel .img{
+  position: static;
   width: calc( 100% / 2  - 2em);
   min-height: 30vh;
   width: 1000px;
@@ -28,6 +30,7 @@
 .carrousel .flechas{
   width:100%;
   margin:1em 0;
+  position: static;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -37,6 +40,7 @@
 .carrousel .flecha{
   width:  2em;
   height: 2em;
+  position: static;
   padding: 0 0 0 3em;
   align-items: center;
   
@@ -53,16 +57,40 @@
 }
 
 /* imagen popocatepetl*/
-.img-home{
-  width: 100%;
-}
-#img-home {
-  width: 1000px;
-  height: auto;
-  margin: auto;
-  display: block;
-  padding: 10px 10px 20px 10px;
-}
+
+  .img-section{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding: 2em 0 0 3em;
+  }
+
+  .img-container{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+
+   
+  }
+  .img-home{
+    width: 700px;
+    height: 600px;
+  }
+      
+  .texto{
+    font-family: 'Poppins', sans-serif;
+    color: #fff9f3;
+    position: absolute;
+    text-align: justify;
+    width: 130%;
+    height: 40%;
+    font-size: 30px;
+    left: 80%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+   }
 
 /*inicia Swiper productos*/
 *{
@@ -72,32 +100,28 @@
   font-family: 'Tinos', serif;
 }
 
-.container{
-  max-width: 100%;
-  margin: 0;
-}
-
-.productos-container{
-  padding: 0 0 0 0;
-}
-.productos-container h2{
+.titulo-swiper {
   font-size: 60px;
-  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
   color: #0E4950; 
+
 }
 .swiper{
+  position: static;
   width: 20%;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .swiper-slide{
+  position: static;
   background-position: center;
   background-size: cover;
   width: 100%;
 }
 .swiper-slide img{
+  position: static;
   display: block;
   width: 100%;
   height: auto;
@@ -114,20 +138,125 @@ margin-left: -15%;
 
 /* Inicia recetas */
 #Recetas-home{
+  padding-top: 20px;
   font-size: 60px;
-  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
   color: #0E4950;
 
 }
 
-@media(max-width:991px) {
+@media(max-width:768px) {
   body {
-      min-height: 0vh;
-      display: grid;
+      padding: 0;
   }
   .productos-container{
-      padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .carrousel{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .carrousel-slide{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .flechas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-pagination{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-button-prev{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-button-next{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-scrollbar{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
   }
 }

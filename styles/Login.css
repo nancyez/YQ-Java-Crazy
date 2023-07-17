@@ -1,33 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
 
-body{
+.container{
     font-family:'Poppins', sans-serif;
     color: #0e4950;
     font-size: 20px;
 }
 
 .bg{
-    background-image: url(../assest/img/fruta.jpeg);
+    background-image: url(../assest/img/cuenta/loginV2.jpeg);
     background-position: center;
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
     background-repeat: no-repeat;
     width:5;
 }
+
 .seccion{
-    padding-top: 200px;
-    padding-bottom: 70px;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 
 
+h1{
+    font-size: 60px;
+}
+
 .row{
-    /*margin-top:50px; Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
+    margin-top:50px; /*Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
     box-shadow:0px 0px 20px 0px #CBA609;
     border-radius: 25px;
     background:#fff9f3;
 }
 
-#form-input {
+#email {
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+}
+
+#Passwd {
     background: none;
     color: #0e4950;
     font-size: 1em;
@@ -58,3 +72,14 @@ a{
     color: #0e4950;
 }
 
+.form-label, .form-check-label{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.help-block {
+color: #cc3333
+}
