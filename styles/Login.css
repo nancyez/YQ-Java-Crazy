@@ -7,7 +7,7 @@
 }
 
 .bg{
-    background-image: url(../assest/img/cuenta/loginV2.jpeg);
+    background-image: url(../assest/img/cuenta/lg2.jpeg);
     background-position: center;
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
@@ -48,6 +48,7 @@ h1{
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
+    position: relative;
 }
 
 .form-check-input{

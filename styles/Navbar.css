@@ -68,7 +68,7 @@ header label {
     border-right: 1px solid #CBA609;
 }
 
-header label:hover {
+header .navicono :hover {
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
