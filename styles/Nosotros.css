@@ -38,7 +38,7 @@ body{
     }
 
 hr.new1 {
-    border: 1px solid  #CBA609;
+    border: 2px solid  #CBA609;
   }
 a .icon:hover{
     
@@ -142,7 +142,7 @@ header label:hover {
         
     }
 } */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     #P1 span,
     #P2 .RecolectandoFruta {
       max-width: 100%;
@@ -157,92 +157,44 @@ div .inicio-div{
     #P3 img {
       max-width: 100%;
     }
-  }
-
-h1 {
-    color: black;
-    text-align: center;
-    font-family: 'Tinos', serif;
-    font-size: bolder;
+  }*/
+  
+  *{
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
 }
 
-#Nosotros {
-    /*display:flex;
-    border-radius: 20%;
-    text-align:center;
-    font-family: 'Poppins', sans-serif;
-    color: black;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /*margin: 1em;*/
-   }
-.img-fluid{
-    /*max-width: 350px; 
+:root{
+    --bgColor: #ECDBC9;
+
+}
+
+body{
+    width: 100vw;
+    /*padding: 1rem;*/
+    background-color: var(--bgColor);
+    font-family: "Poppins",sans-serif;
+}
+
+.cards{
+padding: 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax (120px, 1fr));
+gap: 1rem;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+color: #0E4950;
+}
+
+.card {
     height: 350px;
-    justify-content: right;
-    align-items: right;
-    float: right;*/
-    width: 80%;
-    height: auto;
 }
-   
-#P1{
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    text-align: center;
-    align-items: center;
-    /*display: flexbox;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.card img{
     width: 100%;
-    max-width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(203, 166, 9);
+    border-radius: 10px;
     }
-    #Nosotros.text{
-        margin: 1em;*/
-    }
 
-#P2 {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    text-align: left;
-    /*width: 100%;
-    max-width: 400px;
-    margin: 1em;
-#P2.RecolectandoFruta{
-    padding-left: 1em;
-}*/
-}
-
-.img-thumbnail{
-    /*max-width: 200px; 
-    height: 200px;
-    overflow: hidden;
-    justify-items: center;
-    object-position: 50%;*/
-    width: 50%;
-    height: 50%;
-    padding-left: 1em;
-}
-
-#P3{
-    /*font-family: 'Poppins', sans-serif;
-    color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%; 
-    height: auto*/
-    text-align: center;
-    margin: 1em;
-}
-.img-fluid2{
-    /*max-width: 250px; 
-    height: 250px;*/
-    width: 50%;
-    height: 50%;
-    margin-bottom: 1em;
-}

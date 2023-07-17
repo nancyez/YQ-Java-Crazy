@@ -21,8 +21,8 @@ body{
 }
 
 
-#navbarNav,.container{
-      
+#navbarNav,.contenedor-nav{
+    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -38,7 +38,9 @@ body{
     }
 
 hr.new1 {
-    border: 1px solid  #CBA609;
+    border: 2px solid  #CBA609;
+    margin: 0px;
+    opacity: 1;
   }
 a .icon:hover{
     

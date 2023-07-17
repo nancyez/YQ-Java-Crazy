@@ -1,10 +1,262 @@
-body{
-  background-color: #ECDBC9; 
+/* Carrusel */
+.carrousel{
+  width:90%;
+  position: static;
+  max-width: 120em;
+  padding:2em;
+  overflow: hidden;
+
 }
-.img-fluid{
-  display: fluid;
- max-width: 80%;
-  height: auto;
-  padding: 20px 20px 20px 20px;
+.carrousel-slide{
+  width: 200%;
+  position: static;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
+  padding:5em 0 0 7em;
+  gap: 11em;
+
+  transition: all .3s ease;
+  transform: translateX(0%);
+}
+.carrousel .img{
+  position: static;
+  width: calc( 100% / 2  - 2em);
+  min-height: 30vh;
+  width: 1000px;
+  height: 380px;
+}
+.carrousel .flechas{
+  width:100%;
+  margin:1em 0;
+  position: static;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: #CBA609;
+}
+.carrousel .flecha{
+  width:  2em;
+  height: 2em;
+  position: static;
+  padding: 0 0 0 3em;
+  align-items: center;
+  
+}
+
+#Atras{
+  width: 30px;
+  height: auto;
+}
+
+#Adelante{
+  width: 30px;
+  height: auto;
+}
+
+/* imagen popocatepetl*/
+
+  .img-section{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    padding: 2em 0 0 3em;
+  }
+
+  .img-container{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+
+   
+  }
+  .img-home{
+    width: 700px;
+    height: 600px;
+  }
+      
+  .texto{
+    font-family: 'Poppins', sans-serif;
+    color: #fff9f3;
+    position: absolute;
+    text-align: justify;
+    width: 130%;
+    height: 40%;
+    font-size: 30px;
+    left: 80%;
+    top: 95%;
+    transform: translate(-50%,-50%);
+   }
+
+/*inicia Swiper productos*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Tinos', serif;
+}
+
+.titulo-swiper {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0E4950; 
+
+}
+.swiper{
+  position: static;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.swiper-slide{
+  position: static;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.swiper-slide img{
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev{
+  color: #CBA609;
+margin-left: -15%;
+}
+.swiper-button-next{
+  color: #CBA609;
+  margin-right: -15%;
+}
+
+/* Inicia recetas */
+#Recetas-home{
+  padding-top: 20px;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0E4950;
+
+}
+
+@media(max-width:768px) {
+  body {
+      padding: 0;
+  }
+  .productos-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .carrousel{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .carrousel-slide{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .flechas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-pagination{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-button-prev{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-button-next{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  .swiper-scrollbar{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
 }
