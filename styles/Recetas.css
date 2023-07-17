@@ -7,17 +7,19 @@
 
 .productos {
     
+
+
+    background: <a src:../assest/img/peras.jpg></a>
     background-size:cover;
     background-position:center;
     width: 100%;
     height: 300px;
     padding-top: 120px;
     object-fit: cover;
-<<<<<<<<< Temporary merge branch 1
-    object-position: bottom;    
-=========
-    object-position: bottom;   
->>>>>>>>> Temporary merge branch 2
+    object-position: bottom;
+
+       
+
 }
 
 .titulo-pagina{
@@ -72,10 +74,6 @@ header h1{
     margin: auto;
     border: none;
     border-radius: 30px;
-<<<<<<<<< Temporary merge branch 1
-=========
-
->>>>>>>>> Temporary merge branch 2
     transition: .3s;
     background: #fff9f3;
 }
