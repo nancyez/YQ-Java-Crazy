@@ -7,7 +7,7 @@
 }
 
 .bg{
-    background-image: url(../assest/img/cuenta/loginV2.jpeg);
+    background-image: url(../assest/img/cuenta/lg2.jpeg);
     background-position: center;
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
@@ -22,7 +22,7 @@
 
 
 h1{
-    font-size: 60px;
+    font-size:40px;
 }
 
 .row{
