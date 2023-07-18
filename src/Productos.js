@@ -1,3 +1,4 @@
+
 // Obtener elementos del DOM
 const botonesAgregar = document.querySelectorAll('.botton-item');
 const modalCarrito = document.getElementById('carrito-modal');
