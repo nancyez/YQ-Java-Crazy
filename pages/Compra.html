@@ -1,12 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra</title>
+    <!--Link fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
+    <!--Link librerias-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Link Styles-->
+    <link rel="stylesheet" href="../styles/Compra.css">
+    <title>Canasta de compras</title>
 </head>
 <body>
-    
+    <!--
+    <div class="container">
+
+        <div class="banner">
+            <img src="../assest/Nosotros/2Zarzamora.jpeg" alt="Banner canasta">
+        </div>
+        <h1 class="title-canasta"> Nuestros productos </h1>
+
+        <div class="product-grid">
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-ciruela.png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Mermelada de ciruela</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-pera.png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Mermelada de pera</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-Zarzamora .png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Mermelada de zarzamora</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Almibar-de-pera.png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Almibar de pera</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Duraznos-en-Almibar.png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Duraznos en almiba 1L</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+            <div class="product-grid_item">
+                <div class="product-grid_img">
+                    <img src="../assest/img/ImgProductos/Licor-de-pera.png" alt="">
+                </div>
+                <div class="product-grid_info">
+                    <p class="product-grid_nombre"> Licor de pera</p>
+                    <p class="product-grid_precio">$100</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar a canasta</a>
+                </div>
+            </div>
+
+        </div>
+-->
+        <!-- inicia canasta de compras modal-->
+        <!--<div class="modal active" id="jsModalCarrito">
+            <div class="modal_container">
+               <button type="button" id="modal_close"><img src="../assest/img/iconos/Close 1.jpeg" id="Close" alt=""></button>
+                <div class="modal_info">
+                    <div class="modal_header">
+                        <h2>Canasta</h2>
+                        <img src="../assest/img/iconos/carrito-de-compras.png" id="canasta-1" alt="">
+                    </div>
+                    <div class="modal_body">
+                        <div class="modal_list">
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos/Mermelada-de-ciruela.png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Mermelada de ciruela</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos/Mermelada-de-pera.png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Mermelada de pera</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos//Mermelada-de-Zarzamora .png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Mermelada de zarzamora</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos/Almibar-de-pera.png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Almibar de pera</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos/Duraznos-en-Almibar.png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Durazonos en almibar</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                            <div class="modal_items">
+                                <div class="modal_thumb">
+                                    <img src="../assest/img/ImgProductos/Licor-de-pera.png" alt="">
+                                </div>
+                                <div class="modal_text-product">
+                                    <p>Licor de pera</p>
+                                    <p><strong>$100</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <div class="modal_list-price">
+                            <ul>
+                                <li>Subtotal: <strong>$600.00</strong></li>
+                                <li>Descuento: <strong>$0.00</strong></li>
+                            </ul>
+                            <h4 class="modal_total-cart"> Total: $600.00</h4>
+                        </div>
+
+                        <div class="modal_btns">
+                            <a href="#" class="btn-border">Ir al carrito</a>
+                            <a href="#" class="btn-primary">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div> -->
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Shop.css">
+    <title>Shopping</title>
+</head>
+<body>
+    <!-- Cart -->
+    <div class="cart">
+        <h2 class="cart-title"> Mis Compras</h2>
+        <!-- Content -->
+        <div class="cart-content">
+
+            <div class="cart-box">
+            <img src="../assest/img/ImgProductos/Mermelada-de-ciruela.png" alt="" class="cart-img">
+            <div class="detail-box"> <div class="cart-product-title">Mermelada Ciruela</div>
+            <div class="cart-price">$100</div>
+            <input type="number" value="1" class="cart-quantity">
+            </div>
+            <!-- Remove Cart -->
+            <i class='bx bxs-trash-alt cart-remove' ></i>
+        </div>
+    </div>
+    <!-- Total -->
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    <!-- Botton de Compra -->
+    <button type="button" class="btn-buy">Comprar Ahora</button>
+    <!-- Cart Close --> 
+    <i class='bx bx-x' id="close-card"></i>
+
+
+    </div>
+</div>
+
+    <script src="../src/Compra.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
-<script src="../src/Compra.js"></script>
