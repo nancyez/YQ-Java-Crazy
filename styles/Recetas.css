@@ -1,173 +1,297 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
 
 }
-
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #d6d78a;
+}
 .productos {
-    
+  
 
 
-    background: <a src:../assest/img/peras.jpg></a>
-    background-size:cover;
-    background-position:center;
-    width: 100%;
-    height: 300px;
-    padding-top: 120px;
-    object-fit: cover;
-    object-position: bottom;
-
-       
-
+  background: url(../assest/img/peras.jpg);
+  background-size:cover;  
+  background-position:center;
+  width: 100%;
+  height: 300px;
+  padding-top: 120px;
+  object-fit: cover;
+  object-position: bottom;
 }
+
 
 .titulo-pagina{
-    
-    text-align: center;
-    font-size: calc(1.2em + 6vw);
-    color: #fff;
-    padding: 65px 30px;
+  text-align: center;
+  font-size: 60px;
+  /*top: 50%;*/
+  font-size: calc(1.2em + 2vw);
+  color: #fff9f3;
+  padding: 65px 30px;
+
 }
 .titulo-producto{
-    text-align:center;
-    font-size: calc(1.2em + 6vw);
-    color: #0E4950;
-    padding: 50px 30px;
+  text-align:center;
+  font-size: calc(1.2em + 6vw);
+  color: #0E4950;
+  padding: 50px 30px;
 
 }
 
 header h1{
-    text-align: center;
-    font-size: 90px;
-    color: #fff;
-    padding: 30px 30px;
+  text-align: center;
+  font-size: 90px;
+  color: #fff;
+  padding: 30px 30px;
 }
 
 .contenedor{
-    
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    
+  
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .contenedor .contenedor-items{
-    
-    margin-top: 30px;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    row-gap: 30px;
-    width: 100%;
-    transition: 0.3s;
-    padding: 10px;
-    
+  
+  margin-top: 30px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  row-gap: 30px;
+  width: 100%;
+  transition: 0.3s;
+  padding: 10px;
+  
 }
 
-.contenedor .contenedor-items .item{
+/* .contenedor .contenedor-items .item{
 
-    max-width: 280px;
+  max-width: 280px;
 
-    margin: auto;
-    border: none;
-    border-radius: 30px;
-    transition: .3s;
-    background: #fff9f3;
+  margin: auto;
+  border: none;
+  border-radius: 30px;
+  transition: .3s;
+  background: #fff9f3;
 }
 
 
 .contenedor-items .item:hover{
-    box-shadow:  0 0 10px #666;
-    /*scale: 1.05;*/
-    
-}
+  box-shadow:  0 0 10px #666; */
+  /*scale: 1.05;*/
+  
+/* }
 .contenedor-items .item .img-item{
-    width:100%;
-    height:235px;
+  width:100%;
+  height:235px;
 
-    border-radius: 30px 30px 0 0;
+  border-radius: 30px 30px 0 0;
 
-    
+  
 }
 
 .contenedor-items .item .titulo-item{
-    display:block;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  display:block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 
-    font-size: 22px;
+  font-size: 22px;
 
 }
 .contenedor-items .item .precio-item{
-    display: block;
-    text-align: center;
-    font-weight: bold;
+  display: block;
+  text-align: center;
+  font-weight: bold;
 
-    font-size:12px;
+  font-size:12px;
 
-    margin: 10px auto;
-    border: none;
+  margin: 10px auto;
+  border: none;
 }
 
 .contenedor-items .item .botton-item{
-    display: block;
-    margin: 10px auto;
-    border:none;
-    background:#837710;
+  display: block;
+  margin: 10px auto;
+  border:none;
+  background:#837710;
 
-    border-radius: 10px ;
-    color: #fff9f3;
-    width: 50%;
+  border-radius: 10px ;
+  color: #fff9f3;
+  width: 50%;
 
-    padding: 5px 15px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 .letro{
-    font-size: medium;
-   color: #fff;
-    
+  font-size: medium;
+color: #fff;
+  
+} */
+/* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;   
+font-family: 'Poppins', sans-serif; 
+} */
+
+
+
+.card {
+position: relative;
+
+width: 300px;
+height: 400px;
+
 }
+
+.card .card_landing {
+position: relative;
+width: 100%;
+height: 100%;
+box-shadow: 0 5px 10px #000;
+background: linear-gradient(transparent 80%, #000);
+position:absolute;
+object-fit:cover; 
+
+}
+.card img {
+width: 300px;
+height: 100%;
+position:absolute;
+object-fit:cover; 
+z-index: 100;
+}
+
+.card .card_landing h6 {
+position: absolute;
+bottom: 10px;
+left: 10px;
+font-size: 25px;
+color: #fff;
+}
+
+.card .card_info {
+position: absolute;
+width: 90%;
+height: 90%;
+left: 0;
+bottom: 0;
+right: 0;
+top: 0;
+margin: auto;
+padding: 15px;
+background: #fff;
+z-index: 90;
+box-shadow: 0 5px 10px #000;
+transition: .5s;
+}
+
+.card:hover .card_info {
+left: 100%;
+}
+
+.card_info .head {
+padding: 5px 0;
+border-bottom: solid 1px #bc8811;
+}
+
+.card_info .head .title {
+font-size: 20px;
+font-weight: 700;
+color: #bc8811;
+}
+
+.card_info .head .description {
+display: flex;
+gap: 10px;
+}
+
+.card_info .head .description .item {
+display: flex;
+gap: 5px;
+align-items: center;
+}
+
+.card_info .head .description .item i {
+color: #bc8811;
+font-size: 15px;
+}
+
+.card_info .head .description .item p {
+font-size: 13px;
+}
+
+.card_info .content {
+margin-top: 15px;
+}
+
+.card_info .content .list {
+padding: 10px 15px;
+}
+
+.card_info .content .list li {
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+padding: 10px;
+color: #fff;
+width: 100%;
+text-decoration: none;
+text-align: center;
+background: #bc8811;
+display: block;
+margin-top: 10px;
+}
+
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 768px) {
-    /* Estilos para la barra de navegación */
-    .Navbar {
-      /* Agrega los estilos que deseas para la barra de navegación en pantallas grandes */
-    }
-    
-    /* Estilos para los elementos de las recetas */
-    .item {
-      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas grandes */
-    }
+  /* Estilos para la barra de navegación */
+  .Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas grandes */
   }
   
-  /* Estilos para pantallas medianas */
-  @media screen and (max-width: 767px) {
-    /* Estilos para la barra de navegación */
-    .Navbar {
-      /* Agrega los estilos que deseas para la barra de navegación en pantallas medianas */
-    }
-    
-    /* Estilos para los elementos de las recetas */
-    .item {
-      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas medianas */
-    }
+  /* Estilos para los elementos de las recetas */
+  .item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 767px) {
+  /* Estilos para la barra de navegación */
+  .Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas medianas */
   }
   
-  /* Estilos para pantallas pequeñas */
-  @media screen and (max-width: 480px) {
-    /* Estilos para la barra de navegación */
-    .Navbar {
-      /* Agrega los estilos que deseas para la barra de navegación en pantallas pequeñas */
-    }
-    
-    /* Estilos para los elementos de las recetas */
-    .item {
-      /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
-    }
+  /* Estilos para los elementos de las recetas */
+  .item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  /* Estilos para la barra de navegación */
+  .Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas pequeñas */
   }
   
+  /* Estilos para los elementos de las recetas */
+  .item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
+  }
+}
