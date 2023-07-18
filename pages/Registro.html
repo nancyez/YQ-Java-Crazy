@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Link de Styles-->
+    <link rel="stylesheet" href="../styles/Registro.css">
+    <link rel="stylesheet" href="../styles/Navbar.css">
     <title>Registro</title>
 </head>
 <body>
+    <!--Inicia NavBar-->
+  <header class="contenedor-nav">
+    <div class="Navbar">
+      <a href="../index.html"><img class="logo" src="../assest/img/Navbar/Logo.png"  width="200px" alt="" /></a>
+      <hr class="new1"  >
+     
+    
+   
+     <input type="checkbox" id="btn-menu">
+     <label for="btn-menu"><img src="../assest/img/iconos/menu.png" width="30px" alt=""></label>
+     <nav class="menu">
+       <ul>
+         <li><a href="../index.html"><img class="icon" src="../assest/img/iconos/casa.png" width="25px" alt=""></a></li>
+         <li><a href="../pages/Productos.html">Productos</a></li>
+         <li><a href="../pages/Recetas.html">Recetas</a></li>
+         <li><a href="../pages/Nosotros.html">Sobre Nosotros</a></li>
+         <li><a href="../pages/Contacto.html">Contáctanos</a></li>
+         <li><a href="../pages/Login.html"><img class="icon" src="../assest/img/iconos/usuario.png" width="25px"></a></li>
+         <li><a href=""><img class="icon" src="../assest/img/iconos/carrito-de-compras.png" width="25px"></a></li>
+       </ul>
+     </nav>
+   </div>
+ </header>
+<!--Termina NavBar-->
+
+<!--Inicia registro-->
+
 <section class="registro">
-    <div class="container w-50 mt-"> <!--del formulario-->
+    <div class="container w-50"> <!--del formulario-->
         <div class="row">
-            <h1 class="fw-bold text-center py-4">Registrate</h1>
+            <h1 class="fw text-center py-4">Registrate</h1>
             <!--Inicia formulario-->
             <form action="Crear usuario" method="POST" name="registro-form" id="registro-form">
                 <div class="form-group">
@@ -19,19 +49,19 @@
                     <input type="name" class="form-control-plaintext" id="nombre" name="nombre">
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Apellido</label>
-                    <input type="password" class="form-control-plaintext" id="Apellido" name="Apellido">
+                    <label for="user" class="form-label">Apellido</label>
+                    <input type="lastName" class="form-control-plaintext" id="apellido" name="apellido">
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="form-label">
                     <label for="email">E-mail</label>
-                    <input type="email" required placeholder="e-mail">
+                    <input type="email" class="form-control-plaintext" id="email" name="email">
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="form-label">
                     <label for="password">Contraseña</label>
-                    <input type="password" required placeholder="contraseña">
+                    <input type="password" class="form-control-plaintext" id="contraseña" name="contraseña">
                 </div>
                 <div class="my-3 text-center">
-                    <button type="Registrar"> REGISTRAR </button>
+                    <button type="Registrar" id="btn-registro"> Registrar </button>
                 </div>
             </form>
         </div>    

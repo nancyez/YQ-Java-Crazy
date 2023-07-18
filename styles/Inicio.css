@@ -161,17 +161,34 @@ margin-left: -15%;
 
 }
 
-/* Medidas responsivas */
+/* Medidas responsivas 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
    display: grid;
+   grid-template-columns: 2fr;
    max-width: 50%;
    width: 50%;
    height: auto;
 
   }
-  /*.carrousel {
+  .Navbar{
+    display: grid;
+    grid-template-columns: 12;
+    max-width: 100%;
+
+  }
+}
+@media screen and (max-width: 767px){
+  .carrousel {max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+  .carrousel {
    
   }
   .img-section{
@@ -189,4 +206,3 @@ margin-left: -15%;
   .contenedor{
    
   }*/
-}
