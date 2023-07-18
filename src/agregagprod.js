@@ -14,7 +14,7 @@ products.push(product);
 updateProductContainer();
 }
 
-// Función para actualizar el contenido del contenedor de productos en el HTML
+// Función para actualizar el contenido del contenedor de productos en el HTML 
 function updateProductContainer() {
   var productContainer = document.getElementById("productContainer");
   productContainer.innerHTML = "";
@@ -22,7 +22,7 @@ function updateProductContainer() {
   for (var i = 0; i < products.length; i++) {
     var product = products[i];
 
-    var productElement = document.createElement("div");
+    var productElement = document.createElement("div"); 
     productElement.className = "product";
 
     var imageElement = document.createElement("img");
@@ -40,4 +40,4 @@ function updateProductContainer() {
 
 // Ejemplo de cómo usar la función addProduct
 addProduct("path/to/image1.jpg", "Product 1");
-addProduct("path/to/image2.jpg", "Product 2");
+addProduct("path/to/image2.jpg", "Product 2");  
