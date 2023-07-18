@@ -8,36 +8,36 @@
     <title>Registro</title>
 </head>
 <body>
-<section>
-    <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6" id="img-login"><!--Breakpoint es largo o corto aparece o no la imagen-->
-
-    </div class="form-container"><!--Contenedor del formulario-->
-    <div class="col p-5" id="form-col"> <!--del formulario-->
-        <h1 class="fw-bold text-center py-4">Registrate</h1>
-        <!--Inicia formulario-->
-        <form action="" method="POST" name="registro-form" id="registro-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="name" required placeholder="Nombre">
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input type="apellido" required placeholder="Apellido">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" required placeholder="e-mail">
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" required placeholder="contraseña">
-            </div>
-            <div class="my-3 text-center">
-                <button type="Registrar"> REGISTRAR </button>
-            </div>
-        </form>
+<section class="registro">
+    <div class="container w-50 mt-"> <!--del formulario-->
+        <div class="row">
+            <h1 class="fw-bold text-center py-4">Registrate</h1>
+            <!--Inicia formulario-->
+            <form action="Crear usuario" method="POST" name="registro-form" id="registro-form">
+                <div class="form-group">
+                    <label for="user" class="form-label">Nombre</label>
+                    <input type="name" class="form-control-plaintext" id="nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Apellido</label>
+                    <input type="password" class="form-control-plaintext" id="Apellido" name="Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" required placeholder="e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" required placeholder="contraseña">
+                </div>
+                <div class="my-3 text-center">
+                    <button type="Registrar"> REGISTRAR </button>
+                </div>
+            </form>
+        </div>    
     </div>
 </section>
+
     <!--script de boostrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
