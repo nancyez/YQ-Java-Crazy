@@ -1,4 +1,4 @@
-
+alert("¡Precaución! Venta de productos con alcohol. 18+");
 // Obtener elementos del DOM
 const botonesAgregar = document.querySelectorAll('.botton-item');
 const modalCarrito = document.getElementById('carrito-modal');
