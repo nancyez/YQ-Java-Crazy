@@ -4,8 +4,8 @@ body {
 }
 
 .img-item {
-  width: 100%;
-  height: calc(100vh - 80px); /* Calcula el 33% del viewport height y resta 40px para compensar el espacio del encabezado */
+  max-width: 100%;
+  height: auto; /* Calcula el 33% del viewport height y resta 40px para compensar el espacio del encabezado */
   object-fit: cover;
 }
 
@@ -23,4 +23,7 @@ h2, h3 {
 
 ol {
   margin-left: 20px;
+}
+.churro{
+  padding-top: 150px;
 }

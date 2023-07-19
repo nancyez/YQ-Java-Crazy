@@ -13,9 +13,9 @@ body {
 }
 
 /* Estilos del encabezado */
-header {
+.coctel {
   text-align: center;
-  margin-bottom: 40px;
+  padding-top: 150px;
 }
 
 h1 {
