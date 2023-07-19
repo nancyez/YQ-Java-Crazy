@@ -11,7 +11,7 @@ let carrito = JSON.parse(localStorage.getItem('carrito-modal')) || [];
 
 // Event listeners
 botonesAgregar.forEach((boton) => {
-  boton.addEventListener('click', agregarAlCarrito);
+  boton.addEventListener('click', agregarACanasta);
 });
 
 cerrarModal.addEventListener('click', cerrarCarritoModal);
