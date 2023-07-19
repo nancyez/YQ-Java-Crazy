@@ -142,7 +142,7 @@ body{
     /*padding: 1rem;*/
     background-color: var(--bgColor);
     font-family: "Poppins",sans-serif;
-    font-size: 60px
+    /*font-size: 60px*/
 }
 
 .Nosotros {
@@ -158,9 +158,9 @@ body{
 
 .título-page{
     text-align: center;
-    font-size: 60px;
-    /*top: 50%;*/
-    font-size: calc(1.2em + 2vw);
+    /*font-size: 60px;
+    top: 50%;*/
+    font-size: calc(1.2em + 6vw);
     color: #fff9f3;
     padding: 65px 30px;
 }

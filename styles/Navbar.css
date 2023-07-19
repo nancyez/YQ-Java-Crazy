@@ -54,6 +54,7 @@ a .icon:hover{
   position:fixed;
     width: 100%;
     background: #0E4950;
+    z-index: 120;
 }
 
 #btn-menu {
