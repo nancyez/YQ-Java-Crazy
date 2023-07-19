@@ -1,19 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  display: flex;
+ /* display: flex;*/
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   background: #d6d78a;
 }
 
 .productos {
+  z-index: 1;
   background: url(../assest/img/peras.jpg);
   background-size: cover;
   background-position: center;
@@ -26,8 +27,8 @@ body {
 
 .titulo-pagina {
   text-align: center;
-  font-size: 60px;
-  font-size: calc(1.2em + 2vw);
+  /*font-size: 60px;*/
+  font-size: calc(1.2em + 6vw);
   color: #fff9f3;
   padding: 65px 30px;
 }
@@ -53,8 +54,11 @@ header h1 {
   display: flex;
   justify-content: space-between;
 }
-
+.Navbar{
+  z-index: 3;
+}
 .contenedor .contenedor-items {
+  z-index: 2;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
