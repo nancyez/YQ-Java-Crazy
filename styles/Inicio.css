@@ -71,7 +71,7 @@
   width: 100%;
   height: auto;
   display: block;
-  margin: 0;
+  margin: 0 100px;
 }
 
 .img-home {
@@ -84,10 +84,10 @@
   color: #fff9f3;
   position: absolute;
   text-align: justify;
-  width: 130%;
+  width: 100%;
   height: 40%;
   font-size: 30px;
-  left: 80%;
+  left: 73%;
   top: 95%;
   transform: translate(-50%, -50%);
 }

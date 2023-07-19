@@ -13,6 +13,7 @@
 }
 
 .footer-title {
+  text-align: center;
   margin-bottom: 2px;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -75,6 +76,10 @@ width: 30px; /* Ancho de 30 píxeles para los elementos SVG */
   font-family: 'Poppins', sans-serif;
   color: white;
   text-decoration: none;
+}
+#politicas{
+  text-align: center;
+  justify-content: center;
 }
 
 .footer-bottom {
