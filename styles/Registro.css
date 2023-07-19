@@ -1,0 +1,118 @@
+body{
+    background-color: #ECDBC9;
+}
+.container{
+    font-family:'Poppins', sans-serif;
+    color: #0e4950;
+    font-size: 20px;
+}
+
+
+.registro{
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+
+h1{
+    font-size:40px;
+    color: #0e4950;
+}
+
+.row{
+    margin-top:50px; /*Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
+    box-shadow:0px 0px 20px 0px #CBA609;
+    padding: 0;
+    margin: 0 20px 20px 0;
+    border-radius: 25px;
+    background:#fff9f3;
+    width: 500px;
+    height: auto;
+
+}
+
+#nombre {
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+}
+#apellido {
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+}
+
+#email{
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+}
+
+
+#contraseña {
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+    position: relative;
+}
+
+.form-check-input{
+    border:1px solid #CBA609;
+}
+
+#btn-registro{
+    background: #CBA609;
+    color:#0e4950;
+    border: none;
+    border-radius: .5em;
+}
+
+#btn-registro:hover,
+#btn-registro:focus{
+    background: #0e4950;
+    color: #CBA609;
+    transition:background-color 1s ease-out;
+    outline: 0;
+}
+
+a{
+    color: #0e4950;
+}
+
+.form-label, .form-check-label{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.help-block {
+color: #cc3333
+}
+
+@media(max-width: 768px) {
+body {
+    max-width: 100%;
+    padding: 0;
+            
+}
+.registro {
+    display: grid;
+    padding-top: 400px;
+    width: 500px;
+}
+
+}
