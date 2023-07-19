@@ -7,7 +7,7 @@ const carritoItems = document.getElementById('carrito-items');
 const totalCarrito = document.getElementById('total-carrito');
 const comprarBtn = document.getElementById('comprar-btn');
 
-// Event listeners
+// Evento listener
 botonesAgregar.forEach((boton) => {
   boton.addEventListener('click', agregarAlCarrito);
 });

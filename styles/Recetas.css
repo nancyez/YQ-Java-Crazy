@@ -194,12 +194,12 @@ header h1 {
 /* Estilos para pantallas medianas */
 @media screen and (max-width: 767px) {
   /* Estilos para la barra de navegación */
-  .Navbar {
+.Navbar {
     /* Agrega los estilos que deseas para la barra de navegación en pantallas medianas */
   }
   
   /* Estilos para los elementos de las recetas */
-  .item {
+.item {
     /* Agrega los estilos que deseas para los elementos de las recetas en pantallas medianas */
   }
 }
@@ -207,12 +207,12 @@ header h1 {
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 480px) {
   /* Estilos para la barra de navegación */
-  .Navbar {
+.Navbar {
     /* Agrega los estilos que deseas para la barra de navegación en pantallas pequeñas */
   }
   
   /* Estilos para los elementos de las recetas */
-  .item {
+.item {
     /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
   }
 }

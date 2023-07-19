@@ -5,6 +5,7 @@ body{
     font-family:'Poppins', sans-serif;
     color: #0e4950;
     font-size: 20px;
+    margin: 0 450px;
 }
 
 
@@ -37,12 +38,14 @@ h1{
     font-size: 1em;
     border: none;
     outline: none;
+    width: 55%;
     border-bottom: 1px solid #CBA609;
 }
 #apellido {
     background: none;
     color: #0e4950;
     font-size: 1em;
+    width: 60%;
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
@@ -52,6 +55,7 @@ h1{
     background: none;
     color: #0e4950;
     font-size: 1em;
+    width: 65%;
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
@@ -62,6 +66,7 @@ h1{
     background: none;
     color: #0e4950;
     font-size: 1em;
+    width: 70%;
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
@@ -111,7 +116,6 @@ body {
 }
 .registro {
     display: grid;
-    padding-top: 400px;
     width: 500px;
 }
 
