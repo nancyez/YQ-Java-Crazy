@@ -53,11 +53,12 @@
             <form action="#" method="POST" name="login-form" id="login-form" role="form"><!--Queda pendiente para conectarlo con la base de datos -->
                 <div class="form-group">
                     <label for="email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control-plaintext"  id="email" name="email" required>
+                    <input type="email" class="form-control-plaintext"  id="email" name="email">
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control-plaintext"  id="Passwd" name="Passwd" required>
+                    <input type="password" class="form-control-plaintext"  id="Passwd" name="Passwd">
+                    <button id="btn-password" onclick="showPassword(this)">Mostrar contraseña</button>
                 </div>
                 <div class="mb-4">
                     <input type="checkbox" name="connected" class="form-check-input" id="checkbox" >

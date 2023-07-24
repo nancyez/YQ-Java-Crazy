@@ -2,6 +2,7 @@
 .modal {
     display: none;
     position: fixed;
+    font-family:'Poppins', sans-serif;
     z-index: 1;
     left: 0;
     top: 0;
@@ -12,12 +13,29 @@
   }
   
   .modal-contenido {
-    background-color: #fefefe;
+    background-color: #fff9f3;
     margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    color: #0E4950;
+    font-family:'Poppins', sans-serif;
+    padding: 50px;
+    border-radius: 8px;
     width: 80%;
     max-width: 600px;
+  }
+
+  #contador-productos {
+    color: #0E4950;
+    margin-top: 10px;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    width: 35px;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+  }
+  
+  #contador {
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
   }
   
   .cerrar-modal {
@@ -45,9 +63,10 @@
   .eliminar-btn {
     background-color: #f44336;
     color: white;
+    font-family:'Poppins', sans-serif;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 3px 5px;
+    border-radius: 8px;
     cursor: pointer;
   }
   
@@ -56,16 +75,18 @@
   }
   
   #comprar-btn {
-    background-color: #4caf50;
-    color: white;
+    background-color: #0E4950;
+    color: #CBA609;
     border: none;
-    padding: 10px 20px;
+    font-family:'Poppins', sans-serif;
+    margin: 8px;
+    padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
   }
   
   #comprar-btn:hover {
-    background-color: #45a049;
+    background-color: #837710;
   }
 
   /* Estilos tarjetas*/

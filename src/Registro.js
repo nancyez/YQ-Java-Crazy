@@ -1,17 +1,13 @@
-//------------- login.js -------------//
 $(document).ready(function() {
 
 	//validate login form 
-	$("#login-form").validate({
+	$("#registro-form").validate({
 		ignore: null,
 		ignore: 'input[type="hidden"]',
 		errorPlacement: function( error, element ) {
 			var place = element.closest('.input-group');
 			if (!place.get(0)) {
 				place = element;
-			}
-			if (place.get(0).type === 'checkbox') {
-				place = element.parent();
 			}
 			if (error.text() !== '') {
 				place.after(error);
@@ -57,12 +53,12 @@ let num = 0;
 
 function showPassword() {
     if (num == 0) {
-        document.getElementById("Passwd").type = "text";
+        document.getElementById("contraseña").type = "text";
         document.getElementById("btn-password").innerHTML = "Ocultar contraseña";
-        num = 1; // Cambiamos num a 1 para indicar que la contraseña está visible.
+        num = 1; // num a 1 para indicar que la contraseña está visible.
     } else {
-        document.getElementById("Passwd").type = "password";
+        document.getElementById("contraseña").type = "password";
         document.getElementById("btn-password").innerHTML = "Mostrar contraseña";
-        num = 0; // Cambiamos num a 0 para indicar que la contraseña está oculta.
+        num = 0; // num a 0 para indicar que la contraseña está oculta.
     }
 }

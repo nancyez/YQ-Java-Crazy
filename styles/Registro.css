@@ -38,20 +38,10 @@ h1{
     font-size: 1em;
     border: none;
     outline: none;
-    width: 55%;
+    width: 70%;
     border-bottom: 1px solid #CBA609;
 }
 #apellido {
-    background: none;
-    color: #0e4950;
-    font-size: 1em;
-    width: 60%;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #CBA609;
-}
-
-#email{
     background: none;
     color: #0e4950;
     font-size: 1em;
@@ -61,12 +51,22 @@ h1{
     border-bottom: 1px solid #CBA609;
 }
 
-
-#contraseña {
+#email{
     background: none;
     color: #0e4950;
     font-size: 1em;
-    width: 70%;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CBA609;
+}
+
+
+#password {
+    background: none;
+    color: #0e4950;
+    font-size: 1em;
+    width: 55%;
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
@@ -75,6 +75,19 @@ h1{
 
 .form-check-input{
     border:1px solid #CBA609;
+}
+#btn-password{
+    background: #fff9f3;
+    color: #0e4950;
+    outline: none;
+    border: 0;
+}
+#btn-password:hover,
+#btn-password:focus{
+    border: 0;
+    outline: none;
+    background: #fff9f3;
+    color: #CBA609;
 }
 
 #btn-registro{
