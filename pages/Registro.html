@@ -39,11 +39,11 @@
 <!--Inicia registro-->
 
 <section class="registro">
-    <div class="container w-50"> <!--del formulario-->
+    <div class="container w-75 mt-1"> <!--del formulario-->
         <div class="row">
             <h1 class="fw text-center py-4">Regístrate</h1>
             <!--Inicia formulario-->
-            <form action="Crear usuario" method="POST" name="registro-form" id="registro-form">
+            <form action="#" method="POST" name="registro-form" id="registro-form" role="form">
                 <div class="form-group">
                     <label for="user" class="form-label">Nombre</label>
                     <input type="name" class="form-control-plaintext" id="nombre" name="nombre">
@@ -54,11 +54,12 @@
                 </div>
                 <div class="form-group" class="form-label">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control-plaintext" id="email" name="email">
+                    <input type="email" class="form-control-plaintext" id="email" name="email" required>
                 </div>
                 <div class="form-group" class="form-label">
                     <label for="password">Contraseña</label>
-                    <input type="password" class="form-control-plaintext" id="contraseña" name="contraseña">
+                    <input type="password" class="form-control-plaintext" id="password" name="password" required>
+                    <button id="btn-password" onclick="showPassword(this)">Mostrar contraseña</button>
                 </div>
                 <div class="my-3 text-center">
                     <button type="Registrar" id="btn-registro"> Registrar </button>

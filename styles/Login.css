@@ -51,6 +51,20 @@ h1{
     position: relative;
 }
 
+#btn-password{
+    background: #fff9f3;
+    color: #0e4950;
+    outline: none;
+    border: 0;
+}
+#btn-password:hover,
+#btn-password:focus{
+    border: 0;
+    outline: none;
+    background: #fff9f3;
+    color: #CBA609;
+}
+
 .form-check-input{
     border:1px solid #CBA609;
 }

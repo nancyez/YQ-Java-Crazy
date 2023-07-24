@@ -1,13 +1,12 @@
 // Obtener elementos del DOM
+/*
 const botonesAgregar = document.querySelectorAll('.botton-item');
 const modalCarrito = document.getElementById('carrito-modal');
 const cerrarModal = document.querySelector('.cerrar-modal');
 const carritoItems = document.getElementById('carrito-items');
 const totalCarrito = document.getElementById('total-carrito');
 const comprarBtn = document.getElementById('comprar-btn');
-
-// Obtener el carrito almacenado en el Local Storage o crear uno nuevo
-let carrito = JSON.parse(localStorage.getItem('carrito-modal')) || [];
+const verCanasta = document.getElementById('canasta');
 
 // Event listeners
 botonesAgregar.forEach((boton) => {
@@ -16,6 +15,7 @@ botonesAgregar.forEach((boton) => {
 
 cerrarModal.addEventListener('click', cerrarCarritoModal);
 comprarBtn.addEventListener('click', comprar);
+
 
 // Función para agregar un producto al carrito
 function agregarAlCarrito(event) {
@@ -93,14 +93,127 @@ function getIndexFromElement(element) {
   return carritoItemsArray.indexOf(element);
 }
 
-// Función para realizar la compra
+// Función para comprar
 function comprar() {
-  // Lógica para procesar la compra
-  
-  // Reiniciar carrito
+  // Aquí puedes agregar la lógica para procesar la compra, como enviar la información a un servidor, vaciar el carrito, etc.
+  alert('¡Gracias por tu compra!');
   carrito = [];
-  
   actualizarCarrito();
-  
-  cerrarCarritoModal();
+  cerrarModal();
+}*/
+
+// Variables para el carrito
+let carrito = [];
+let total = 0;
+
+// Obtener elementos del DOM
+const carritoModal = document.getElementById('carrito-modal');
+const cerrarModal = document.querySelector('.cerrar-modal');
+const comprarBtn = document.getElementById('comprar-btn');
+const contadorProductosInput = document.getElementById('contador-productos');
+const carritoItems = document.getElementById('carrito-items');
+const totalCarrito = document.getElementById('total-carrito');
+
+// Función para abrir el modal
+function abrirModal() {
+  carritoModal.style.display = 'block';
 }
+
+// Función para cerrar el modal
+function cerrarModal() {
+  carritoModal.style.display = 'none';
+}
+
+// Función para agregar un producto al carrito
+function agregarAlCarrito(producto) {
+  // Verificar si el producto ya existe en el carrito
+  const index = carrito.findIndex(item => item.nombre === producto.nombre);
+  if (index !== -1) {
+    carrito[index].cantidad += parseInt(contadorProductosInput.value);
+  } else {
+    producto.cantidad = parseInt(contadorProductosInput.value);
+    carrito.push(producto);
+  }
+  actualizarCarrito();
+}
+
+// Función para actualizar el contenido del carrito
+function actualizarCarrito() {
+  carritoItems.innerHTML = '';
+  total = 0;
+  carrito.forEach(producto => {
+    const subtotal = producto.precio * producto.cantidad;
+    carritoItems.innerHTML += `
+      <div class="carrito-item">
+        <span>${producto.nombre}</span>
+        <span>Precio: $${producto.precio.toFixed(2)}</span>
+        <span>Cantidad: ${producto.cantidad}</span>
+        <span>Subtotal: $${subtotal.toFixed(2)}</span>
+      </div>
+    `;
+    total += subtotal;
+  });
+  totalCarrito.textContent = `$${total.toFixed(2)}`;
+}
+
+// Función para comprar
+function comprar() {
+  // Aquí puedes agregar la lógica para procesar la compra, como enviar la información a un servidor, vaciar el carrito, etc.
+  alert('¡Gracias por tu compra!');
+  carrito = [];
+  actualizarCarrito();
+  cerrarModal();
+}
+
+// Eventos
+cerrarModal.addEventListener('click', cerrarModal);
+comprarBtn.addEventListener('click', comprar);
+
+// Ejemplo de uso:
+abrirModal();
+
+// Función para agregar un producto al carrito
+function agregarAlCarrito(producto) {
+  // Verificar si el producto ya existe en el carrito
+  const index = carrito.findIndex(item => item.nombre === producto.nombre);
+  const cantidad = parseInt(contadorProductosInput.value);
+
+  if (index !== -1) {
+    carrito[index].cantidad += cantidad;
+    carrito[index].subtotal = carrito[index].precio * carrito[index].cantidad;
+  } else {
+    producto.cantidad = cantidad;
+    producto.subtotal = producto.precio * producto.cantidad;
+    carrito.push(producto);
+  }
+  actualizarCarrito();
+}
+
+// Función para actualizar el contenido del carrito
+function actualizarCarrito() {
+  carritoItems.innerHTML = '';
+  total = 0;
+  carrito.forEach(producto => {
+    carritoItems.innerHTML += `
+      <div class="carrito-item">
+        <span>${producto.nombre}</span>
+        <span>Precio: $${producto.precio.toFixed(2)}</span>
+        <span>Cantidad: ${producto.cantidad}</span>
+      </div>
+    `;
+    total += producto.subtotal;
+  });
+  totalCarrito.textContent = `$${total.toFixed(2)}`;
+}
+
+// Función para manejar el cambio en el input de cantidad
+contadorProductosInput.addEventListener('change', () => {
+  const cantidad = parseInt(contadorProductosInput.value);
+  if (cantidad <= 0) {
+    contadorProductosInput.value = 1;
+  }
+  actualizarCarrito();
+});
+
+
+
