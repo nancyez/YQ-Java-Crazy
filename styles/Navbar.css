@@ -1,22 +1,14 @@
 /*Navbar Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-
-}
-
 body{
    
     background-size:contain;
     background-color: #ECDBC9;
     background-repeat:initial;
     background-position: center;
-    position:relative;
-    font-family: 'Montserrat';
+    position: relative;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
@@ -24,7 +16,7 @@ body{
 #navbarNav,.contenedor-nav{
     
     justify-content: center;
-    align-items: center;
+    align-items:center;
     text-align: center;
     background-color: #0E4950;
 }
@@ -54,7 +46,7 @@ a .icon:hover{
     position:fixed;
     width: 100%;
     background: #0E4950;
-    z-index: 120;
+    z-index: 100;
 }
 
 #btn-menu {
