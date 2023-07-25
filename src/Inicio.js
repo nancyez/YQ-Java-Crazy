@@ -24,6 +24,7 @@ flecha.forEach( ( cadaFlecha , i )=> {
         flecha[i].classList.add('activo')
 
     })
+    
 })
 
 //Termina JS de carrusel 
