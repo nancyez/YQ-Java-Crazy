@@ -5,6 +5,9 @@
     color: #0e4950;
     font-size: 20px;
 }
+*, ::after, ::before {
+ box-sizing:unset;
+}
 
 .bg{
     background-image: url(../assest/img/cuenta/lg2.jpeg);
