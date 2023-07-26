@@ -1,27 +1,26 @@
 /* Carrusel */
 .carrousel {
   width: 90%;
-  position: static;
-  max-width: 120em;
-  padding: 2em;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  padding: 6px;
   overflow: hidden;
 }
 
 .carrousel-slide {
   width: 200%;
-  position: static;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5em 0 0 7em;
-  gap: 11em;
+  padding: 10em 0em 0 10em;
+  gap: 9em;
   transition: all .3s ease;
   transform: translateX(0%);
 }
 
 .carrousel .img {
-  position: static;
   width: calc(100% / 2 - 2em);
   min-height: 30vh;
   width: 1000px;
@@ -31,7 +30,6 @@
 .carrousel .flechas {
   width: 100%;
   margin: 1em 0;
-  position: static;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -42,7 +40,6 @@
 .carrousel .flecha {
   width: 2em;
   height: 2em;
-  position: static;
   padding: 0 0 0 3em;
   align-items: center;
   z-index: auto;
@@ -117,14 +114,12 @@
 }
 
 .swiper-slide {
-  position: static;
   background-position: center;
   background-size: cover;
   width: 100%;
 }
 
 .swiper-slide img {
-  position: static;
   display: block;
   width: 100%;
   height: auto;
