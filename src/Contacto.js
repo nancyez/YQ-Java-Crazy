@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 	//validate login form 
-	$("#login-form").validate({
+	$("#contacto-form").validate({
 		ignore: null,
 		ignore: 'input[type="hidden"]',
 		errorPlacement: function( error, element ) {
@@ -17,28 +17,30 @@ $(document).ready(function() {
 				place.after(error);
 			}
 		},
-		errorClass: 'help-block',
-		rules: {
-			Nuser: {
+		errorClass:'help-block',
+		rules:{
+			fullname:{
 				required: true,
 				minlength: 5
 			},
-			email: {
+			email:{
 				required: true,
 				email: true
 			},
-			Passwd: {
+			affair:{
 				required: true,
-				minlength: 5
-			}
+				minlength: 10
+			},
+			message:{
+				required:true,
+				minlength:45,
+			},
 		},
 		messages: {
-			Passwd: {
-				required: "Proporciona tu contraseña",
-				minlength: "Su contraseña debe tener al menos 5 caracteres"
-			},
+			affair: "Por favor, ingresa el asunto",
 			email: "Por favor, ingresa tu cuenta de correo",
-			Nuser: "Por favor, ingresa tu nombre de usuario",
+			fullname: "Por favor, ingresa tu nombre completo",
+			message:"Por favor, ingresa tu mensaje",
 		},
 		highlight: function( label ) {
 			$(label).closest('.form-group').removeClass('has-success').addClass('has-error');
@@ -48,5 +50,7 @@ $(document).ready(function() {
 			label.remove();
 		}
 	});
+
+	
 
 });

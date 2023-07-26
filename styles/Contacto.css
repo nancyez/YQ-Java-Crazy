@@ -1,6 +1,5 @@
 body {
     background-color: #ECDBC9;
-    color: #0E4950;
     line-height: 1.6;
     /*padding: 0 1.5px;*/
 }
@@ -16,6 +15,7 @@ div.content{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .logo1 {
     color: #0E4950;
     text-align: center;
@@ -45,7 +45,7 @@ div.content{
 
 .contact-form form label {
     display: block;
-    color: #0E4950;
+    /*color: #0E4950;*/
 }
 
 .contact-form form p {
@@ -53,7 +53,6 @@ div.content{
     padding: 1em;
     color: #0E4950; 
 }
-
 
 .contact-form form button,
 .contact-form form input,
@@ -98,7 +97,7 @@ div.content{
         max-width: 700px;
         width: 100%;
         margin: 0 auto;
-     }
+    }
     .contacto-agrupado > * {
         padding: 2em;
 
@@ -107,4 +106,8 @@ div.content{
         display: grid;
     }*/
     
+}
+
+.help-block {
+    color: #cc3333
 }
