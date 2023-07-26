@@ -13,28 +13,33 @@ $(document).ready(function() {
 				place.after(error);
 			}
 		},
-		errorClass: 'help-block',
+		errorClass:'help-block',
 		rules: {
-			Nuser: {
+			name: {
 				required: true,
 				minlength: 5
+			},
+			lastname:{
+				required: true,
+				minlength: 10
 			},
 			email: {
 				required: true,
 				email: true
 			},
-			Passwd: {
+			password: {
 				required: true,
 				minlength: 5
 			}
 		},
 		messages: {
-			Passwd: {
+			password: {
 				required: "Proporciona tu contraseña",
-				minlength: "Su contraseña debe tener al menos 5 caracteres"
+				minlength: "Su contraseña debe tener al menos 6 caracteres"
 			},
 			email: "Por favor, ingresa tu cuenta de correo",
-			Nuser: "Por favor, ingresa tu nombre de usuario",
+			lastname:"Por favor, ingresa tu apellido",
+			name: "Por favor, ingresa tu nombre de usuario",
 		},
 		highlight: function( label ) {
 			$(label).closest('.form-group').removeClass('has-success').addClass('has-error');
@@ -53,12 +58,12 @@ let num = 0;
 
 function showPassword() {
     if (num == 0) {
-        document.getElementById("contraseña").type = "text";
+        document.getElementById("password").type = "text";
         document.getElementById("btn-password").innerHTML = "Ocultar contraseña";
-        num = 1; // num a 1 para indicar que la contraseña está visible.
+        num = 1; // cambiamos num a 1 para indicar que la contraseña está visible.
     } else {
-        document.getElementById("contraseña").type = "password";
+        document.getElementById("password").type = "password";
         document.getElementById("btn-password").innerHTML = "Mostrar contraseña";
-        num = 0; // num a 0 para indicar que la contraseña está oculta.
+        num = 0; // cambiamos num a 0 para indicar que la contraseña está oculta.
     }
 }
