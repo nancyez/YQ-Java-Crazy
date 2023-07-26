@@ -59,7 +59,9 @@ h1{
     color: #0e4950;
     outline: none;
     border: 0;
+    margin-bottom: 3%;
 }
+
 #btn-password:hover,
 #btn-password:focus{
     border: 0;
@@ -70,12 +72,16 @@ h1{
 
 .form-check-input{
     border:1px solid #CBA609;
+
 }
 
 #boton{
     background: #CBA609;
     color:#0e4950;
     border: none;
+    width: 35%;
+    margin: 5% 0 0 33%;
+
 }
 
 #boton:hover, #boton:focus{

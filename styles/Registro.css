@@ -1,135 +1,89 @@
-body{
-    background-color: #ECDBC9;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+
 .container{
-    font-family:'Poppins', sans-serif;
+    width: 100%;
+}
+.container1{
+    font-family:'Poppins', 'sans-serif';
     color: #0e4950;
     font-size: 20px;
-    margin: 0 450px;
+    box-shadow:0px 0px 20px 0px #CBA609;
+    border-radius: 25px;
+    width:100%;
+    background:#fff9f3;
+    width: 50%;
+    margin-top: 160px;
 }
 
-
-.registro{
-    padding-top: 170px;
-    padding-bottom: 100px;
+#form{
+    padding: 5% 0 5% 0;
+    margin: 0 5% 0 5%;
+    width: 30%;
 }
-
 
 h1{
     font-size:40px;
-    color: #0e4950;
 }
 
-.row{
-    margin-top:50px; /*Tomar en cuenta al momento de juntar los componentes de navbar y footer*/
-    box-shadow:0px 0px 20px 0px #CBA609;
-    padding: 0;
-    margin: 0 20px 20px 0;
-    border-radius: 25px;
-    background:#fff9f3;
-    width: 500px;
-    height: auto;
-
-}
-
-#nombre {
+#name{
     background: none;
     color: #0e4950;
     font-size: 1em;
     border: none;
     outline: none;
-    width: 70%;
     border-bottom: 1px solid #CBA609;
 }
-#apellido {
+
+#lastname{
     background: none;
     color: #0e4950;
     font-size: 1em;
-    width: 65%;
     border: none;
     outline: none;
-    border-bottom: 1px solid #CBA609;
+    border-bottom: 1px solid #CBA609; 
 }
 
 #email{
     background: none;
     color: #0e4950;
     font-size: 1em;
-    width: 60%;
     border: none;
     outline: none;
-    border-bottom: 1px solid #CBA609;
+    border-bottom: 1px solid #CBA609; 
 }
 
-
-#password {
+#password{
     background: none;
     color: #0e4950;
     font-size: 1em;
-    width: 55%;
     border: none;
     outline: none;
     border-bottom: 1px solid #CBA609;
-    position: relative;
 }
 
-.form-check-input{
-    border:1px solid #CBA609;
-}
-#btn-password{
-    background: #fff9f3;
-    color: #0e4950;
-    outline: none;
-    border: 0;
-}
-#btn-password:hover,
-#btn-password:focus{
-    border: 0;
-    outline: none;
-    background: #fff9f3;
-    color: #CBA609;
-}
-
-#btn-registro{
+#boton{
     background: #CBA609;
     color:#0e4950;
     border: none;
-    border-radius: .5em;
+    padding:3px 10px 3px 10px;
+    margin-bottom:15px;
 }
 
-#btn-registro:hover,
-#btn-registro:focus{
+#boton:hover, #boton:focus{
     background: #0e4950;
     color: #CBA609;
     transition:background-color 1s ease-out;
     outline: 0;
 }
 
-a{
+#btn-password{
+    margin-bottom: 15px;
+    border: none;
+    background: none;
     color: #0e4950;
 }
 
-.form-label, .form-check-label{
-    display: flex;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-}
-
 .help-block {
-color: #cc3333
+    color: #cc3333
 }
 
-@media(max-width: 768px) {
-body {
-    max-width: 100%;
-    padding: 0;
-            
-}
-.registro {
-    display: grid;
-    width: 500px;
-}
-
-}
