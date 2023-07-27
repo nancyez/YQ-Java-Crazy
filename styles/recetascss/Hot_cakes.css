@@ -8,6 +8,7 @@ body{
     text-align: center;
  }
   .img-item {
+    max-width: 100%;
     width: 460px;
     height: 350;
     display: block;

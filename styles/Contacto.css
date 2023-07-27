@@ -14,6 +14,7 @@ div.content{
     padding-top: 165px ;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-bottom: 30px;
 }
 
 .logo1 {
@@ -41,6 +42,7 @@ div.content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #0E4950; 
+    border-radius: 25px;
 }
 
 .contact-form form label {
