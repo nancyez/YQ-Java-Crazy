@@ -227,5 +227,9 @@ header h1{
 @media screen and (max-width: 768px) {
   .carrito-modal-content {
     width: 80%;
+  } 
+  .titulo-pagina{
+      padding-top: 120px;
   }
 }
+

@@ -216,3 +216,8 @@ header h1 {
     /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
   }
 }
+@media screen and (max-width: 768px) {
+  .titulo-pagina{
+      padding-top: 120px;
+  }
+}
