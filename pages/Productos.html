@@ -11,6 +11,7 @@
     <link rel="icon" href="../assest/img/iconos/logo pestanas.png">
     <!--Link librerias-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!----------Link Font Google---------->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Tinos:wght@700&display=swap" rel="stylesheet">
 
@@ -39,7 +40,7 @@
          <li><a href="../pages/Nosotros.html">Sobre Nosotros</a></li>
          <li><a href="../pages/Contacto.html">Contáctanos</a></li>
          <li><a href="../pages/Login.html"><img class="icon" src="../assest/img/iconos/usuario.png" width="25px"></a></li>
-         <li><a href=""><img class="icon-cart" id="canasta" src="../assest/img/iconos/carrito-de-compras.png" width="25px"></a></li>
+         <li><a href="./Mis compras.html"><img class="icon-cart" id="canasta" src="../assest/img/iconos/carrito-de-compras.png" width="25px"></a></li>
        </ul>
      </nav>
    </div>
@@ -129,7 +130,22 @@
                  <button class="botton-item">Agregar a canasta</button>
              </div>
          </div>
+
+             <!-- Inicia Modal de Carrito de Compras================== -->
+            <div class="modal" id="carrito-modal">
+              <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="carrito-items">
+                  <!-- Aquí se agregarán los elementos del carrito -->
+                </div>
+                <p>Total: <span id="total-carrito">$0.00</span></p>
+                <button id="comprar-btn" href="./Mis%20compras.html">Comprar</button>
+                <button id="eliminar-all-btn" class="eliminar-all">Vaciar Carrito</button>
+              </div>
+            </div>
      </section>
+     <a href="./"></a>
 
      <!--------------------Termina Seccion productos--------------------------------->
 
@@ -211,18 +227,6 @@
   </footer>
   <!--Termina Footer-->
 
- <!-- Inicia Modal de Carrito de Compras================== -->
- <div class="modal" id="carrito-modal">
-  <div class="modal-contenido">
-      <span class="cerrar-modal">&times;</span>
-      <h2>Carrito de Compras</h2>
-      <div id="carrito-items">
-          <!-- Aquí se agregarán los elementos del carrito -->
-      </div>
-      <p>Total: <span id="total-carrito">$0.00</span><input type="number" value="1" class="contador-productos" id="contador-productos"></p>
-      <button id="comprar-btn">Comprar</button>
-  </div>
-</div>
 </header>
 
  <!-- Termina Modal de Carrito de Compras================== -->
@@ -241,7 +245,6 @@
   ></script>
   <script src="/Contactanos.js"></script>
   <script src="../src/Productos.js"></script>
-  <script src="../src/Compra.js"></script>
   <!--<script src="../src/Mis compras.js"></script>-->
 </body>
 </html>
