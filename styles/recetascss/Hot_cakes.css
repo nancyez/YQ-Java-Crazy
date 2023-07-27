@@ -1,18 +1,35 @@
-body{
-    background-color: #ECDBC9;
-    font-size: medium;
-    font-family: Poppins;
+body {
+  background-color: #ECDBC9;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
 }
-  h1{
-   
-    text-align: center;
- }
-  .img-item {
-    width: 460px;
-    height: 350;
-    display: block;
-    margin: 0 auto;
-  }
-  .hot{
-    padding-top: 150px;
-  }
+
+h1 {
+  text-align: center;
+}
+
+.img-item {
+  max-width: 60%;
+  height: max-content;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.hot {
+  padding-top: 150px;
+}
+
+.list-container {
+  /* Añadimos los siguientes estilos para centrar el listado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Opcionalmente, podemos utilizar esto para centrar verticalmente */
+}
+
+/* Si tienes un elemento de lista dentro de .list-container, puedes usar el siguiente estilo para centrarlo horizontalmente */
+.list-container ul {
+  display: flex;
+  justify-content: center;
+}

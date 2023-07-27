@@ -4,9 +4,11 @@ body {
 }
 
 .img-item {
-  max-width: 100%;
-  height: auto; /* Calcula el 33% del viewport height y resta 40px para compensar el espacio del encabezado */
+  max-width: 60%;
+  height: max-content;
   object-fit: cover;
+  display: block; /* Añadimos esta propiedad para que el elemento se comporte como bloque */
+  margin: 0 auto; /* Centramos horizontalmente utilizando márgenes automáticos */
 }
 
 .titulo-pagina {
@@ -15,6 +17,7 @@ body {
 
 .listado {
   margin-top: 20px;
+  text-align: center; /* Alineamos el texto del listado al centro */
 }
 
 h2, h3 {
@@ -24,6 +27,7 @@ h2, h3 {
 ol {
   margin-left: 20px;
 }
-.churro{
+
+.churro {
   padding-top: 150px;
 }
