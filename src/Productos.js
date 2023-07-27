@@ -130,7 +130,7 @@ function comprar() {
   cerrarCarritoModal();
 
   // Redireccionar a Mis compras.html después de la compra
-  window.location.href = './Mis%20compras.html';
+  window.location.href = './MisCompras.html';
 }
 
 // Función para vaciar el carrito (eliminar todos los productos)
