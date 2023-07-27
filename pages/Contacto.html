@@ -34,7 +34,7 @@
          <li><a href="../pages/Nosotros.html">Sobre Nosotros</a></li>
          <li><a href="../pages/Contacto.html">Contáctanos</a></li>
          <li><a href="../pages/Login.html"><img class="icon" src="../assest/img/iconos/usuario.png" width="25px"></a></li>
-         <li><a href="../pages/Mis compras.html"><img class="icon-cart" src="../assest/img/iconos/carrito-de-compras.png" width="25px"></a></li>
+         <li><a href="../pages/MisCompras.html"><img class="icon-cart" src="../assest/img/iconos/carrito-de-compras.png" width="25px"></a></li>
        </ul>
      </nav>
    </div>
@@ -46,22 +46,22 @@
         <div class="contacto-agrupado">
             <div class="contact-form">        
               <h4 class="logo1">Contáctanos </h4>
-                <form action="form">
+                <form action="Formulario de contacto" method="post" id="contacto-form" class="contact-form" name="form" >
                     <p>
                         <label>Nombre completo</label>
-                        <input type="text" name="fullname" id="fullname" required>
+                        <input type="text" name="fullname" id="fullname">
                     </p>
                     <p>
                         <label>Correo electrónico</label>
-                        <input type="email" name="email" required >
+                        <input type="email" name="email">
                     </p>
                     <p>
                         <label>Asunto</label>
-                        <input type="text" name="affair" required>
+                        <input type="text" name="affair">
                     </p>
                     <p>
                         <label>Mensaje</label>
-                        <textarea name="message" id="message"rows="3" required></textarea>
+                        <textarea name="message" id="message"rows="3"></textarea>
                     </p>
                     <p>
                         <button type="submit">

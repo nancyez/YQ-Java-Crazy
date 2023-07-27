@@ -1,95 +1,125 @@
-/* Estilos para el carrito de compras modal */
-.modal {
-    display: none;
-    position: fixed;
-    font-family:'Poppins', sans-serif;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-contenido {
-    background-color: #fff9f3;
-    margin: 10% auto;
-    color: #0E4950;
-    font-family:'Poppins', sans-serif;
-    padding: 50px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-  }
+/* Estilos CSS para el carrito de compras */
 
-  #contador-productos {
-    color: #0E4950;
-    margin-top: 10px;
-    margin: 10px 0 0 10px;
-    text-align: center;
-    width: 35px;
-    font-size: 16px;
-    font-family:'Poppins', sans-serif;
-  }
-  
-  #contador {
-    font-weight: bold;
-    font-family:'Poppins', sans-serif;
-  }
-  
-  .cerrar-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .cerrar-modal:hover,
+.modal {
+  display: none;
+  position: fixed;
+  font-family:'Poppins', sans-serif;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+  background-color: #fff9f3;
+  margin: 10% auto;
+  color: #0E4950;
+  font-family:'Poppins', sans-serif;
+  padding: 50px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 650px;
+}
+h2{
+  text-align: center;
+  color: #0E4950;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+#total-carrito{
+  text-align: center;
+
+}
+
+.cerrar-modal {
+  color: #CBA609;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar-modal:hover,
   .cerrar-modal:focus {
-    color: #000;
+    color: #0E4950;
     text-decoration: none;
     cursor: pointer;
   }
-  
-  .carrito-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .eliminar-btn {
-    background-color: #f44336;
-    color: white;
-    font-family:'Poppins', sans-serif;
-    border: none;
-    padding: 3px 5px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .eliminar-btn:hover {
-    background-color: #d32f2f;
-  }
-  
-  #comprar-btn {
-    background-color: #0E4950;
-    color: #CBA609;
-    border: none;
-    font-family:'Poppins', sans-serif;
-    margin: 8px;
-    padding: 5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #comprar-btn:hover {
-    background-color: #837710;
-  }
 
-  /* Estilos tarjetas*/
+#carrito-items {
+  display: grid;
+  grid-template-columns:repeat(1, 3fr);
+}
+
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+ /* Estilos para el encabezado del carrito */
+.encabezado-carrito {
+  font-weight: bold; 
+  background-color: #fff9f3;
+  color: #0E4950; 
+  padding: 5px; 
+  gap: 5px;
+  text-align: center;
+}
+
+/* Estilos para los botones de eliminar */
+.eliminar-btn{
+  color: #0E4950;
+  border: none;
+  padding: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+.eliminar-btn:hover {
+  color: red;background-color: #fff9f3;
+}
+
+#comprar-btn {
+  background-color: #0E4950;
+  color: #CBA609;
+  border: none;
+  font-family:'Poppins', sans-serif;
+  margin: 8px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#comprar-btn:hover {
+  background-color: #837710;
+}
+
+.eliminar-all{
+  background-color: #CBA609;
+  color: #0E4950;
+  border: none;
+  font-family:'Poppins', sans-serif;
+  margin: 8px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+.eliminar-all:hover{
+  background-color: #837710;
+
+}
+
+
+/* Estilos tarjetas*/
     
 .titulo-pagina{
     
@@ -192,8 +222,18 @@ header h1{
         box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
         /* Lowering the shadow */
 }
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .titulo-pagina{
       padding-top: 120px;
   }
 }
+=======
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .carrito-modal-content {
+    width: 80%;
+  }
+}
+>>>>>>> 932561b3b10313b6d61d8815bd0d01d45e19f55a
