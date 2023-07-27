@@ -222,18 +222,14 @@ header h1{
         box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
         /* Lowering the shadow */
 }
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .titulo-pagina{
-      padding-top: 120px;
-  }
-}
-=======
 
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
   .carrito-modal-content {
     width: 80%;
+  } 
+  .titulo-pagina{
+      padding-top: 120px;
   }
 }
->>>>>>> 932561b3b10313b6d61d8815bd0d01d45e19f55a
+
