@@ -9,13 +9,13 @@
 }
 
 .carrousel-slide {
-  width: 200%;
+  width: 170%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10em 0em 0 10em;
-  gap: 9em;
+  padding: 10em 0em 0 13em;
+  gap: 10em;
   transition: all .3s ease;
   transform: translateX(0%);
 }
@@ -179,8 +179,8 @@ color: #fff9f3;
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .carrousel-slide {
-    padding: 5em 0 0 1em;
-    gap: 6em;
+    padding: 6em 0px 0px 4em;
+    gap: 5em;
     padding-top: 150px;
   }
   .contenedor-volcan{
