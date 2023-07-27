@@ -33,3 +33,19 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+  h1{
+   
+    text-align: center;
+ }
+  .img-item {
+    max-width: 100%;
+    width: 460px;
+    height: 350;
+    display: block;
+    margin: 0 auto;
+  }
+  .hot{
+    padding-top: 150px;
+  }
+
