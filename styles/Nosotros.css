@@ -1,7 +1,6 @@
 /*Navbar Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -177,10 +176,10 @@ font-size: 30px
 }
 
 .card {
-    height: 350px;
+    height: 35vw;
 }
 .card img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     border: 1px solid rgb(203, 166, 9);

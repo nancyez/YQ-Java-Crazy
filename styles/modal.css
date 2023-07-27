@@ -1,0 +1,71 @@
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: modal 1s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+img {
+    width: 100%; /* Make the image take the full width of the container */
+    max-height: 80%; /* Adjust this value as needed */
+}
+
+.contenido {
+    margin: auto;
+    width: 60%; /* Increase this value if you want a larger modal */
+    max-height: 80%; /* Adjust this value as needed */
+    background: #CBA609;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the image is clipped if it exceeds the modal's height */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+h2{
+    color: #fff9f3;
+    font-family: 'Poppins', sans-serif;
+}
+#cerrar {
+    display: none;
+}
+
+#cerrar + label {
+    position: fixed;
+    color: #CBA609;
+    font-size: 25px;
+    z-index: 50;
+    background: #0E4950;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    right: 10px;
+    cursor: pointer;
+    animation: modal 0s 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+#cerrar:checked + label,
+#cerrar:checked~.modal {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
