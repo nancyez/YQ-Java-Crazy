@@ -25,7 +25,11 @@ h1 {
 }
 
 .img-item {
+<<<<<<< HEAD
   max-width: 500px;
+=======
+  max-width: 70%;
+>>>>>>> 510da4bd6d2959b0b10aba5cfecd19031da2cad4
   height: auto;
 }
 

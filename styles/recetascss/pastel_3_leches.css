@@ -18,7 +18,7 @@ body {
     padding-top: 150px;
   }
   
-  h1 {
+  .pastel h1 {
     font-size: 28px;
     color: #333;
     margin-bottom: 10px;
@@ -34,13 +34,13 @@ body {
     margin-bottom: 20px;
   }
   
-  h2 {
+  .listado h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
   }
   
-  ul {
+  .listado ul {
     list-style-type: disc;
     padding-left: 20px;
     color: #555;

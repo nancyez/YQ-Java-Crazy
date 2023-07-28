@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
 
 .container{
-    width: 200%;
+    width: 100%;
 }
 .container1{
     font-family:'Poppins', 'sans-serif';
@@ -11,15 +11,20 @@
     border-radius: 25px;
     width:100%;
     background:#fff9f3;
+    width: 50%;
+    margin-top: 160px;
 }
 
 #form{
     padding: 5% 0 5% 0;
     margin: 0 5% 0 5%;
+    width: 30%;
 }
-
+*, ::after, ::before {
+    box-sizing:content-box;
+}
 h1{
-    font-size: 60px;
+    font-size:40px;
 }
 
 #name{
@@ -83,4 +88,6 @@ h1{
 .help-block {
     color: #cc3333
 }
-
+.row{
+    justify-content: center;
+}
