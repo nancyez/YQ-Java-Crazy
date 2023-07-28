@@ -27,13 +27,13 @@ $(document).ready(function() {
 				required: true,
 				email: true
 			},
-			Passwd: {
+			password: {
 				required: true,
 				minlength: 5
 			},	
 		},
 		messages: {
-			Passwd: {
+			password: {
 				required: "Proporciona tu contraseña",
 				minlength: "Su contraseña debe tener al menos 5 caracteres"
 			},
@@ -57,25 +57,12 @@ let num = 0;
 
 function showPassword() {
     if (num == 0) {
-        document.getElementById("Passwd").type = "text";
-        document.getElementById("show-password").innerHTML = "Ocultar contraseña";
+        document.getElementById("password").type = "text";
+        document.getElementById("boton-muestra").innerHTML = "Ocultar contraseña";
         num = 1; // Cambiamos num a 1 para indicar que la contraseña está visible.
     } else {
-        document.getElementById("Passwd").type = "password";
-        document.getElementById("show-password").innerHTML = "Mostrar contraseña";
+        document.getElementById("password").type = "password";
+        document.getElementById("boton-muestra").innerHTML = "Mostrar contraseña";
         num = 0; // Cambiamos num a 0 para indicar que la contraseña está oculta.
     }
-}
-
-// Usuarios guardados
-
-const listaDeUsuarios= [];
-
-function addUsuariotoSystem(){
-	const nuevoUsuario = {
-		id:id,
-		name:name,
-
-
-	}
 }

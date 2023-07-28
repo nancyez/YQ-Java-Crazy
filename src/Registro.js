@@ -21,7 +21,7 @@ $(document).ready(function() {
 			},
 			lastname:{
 				required: true,
-				minlength: 10
+				minlength: 4
 			},
 			phone:{
 				required:true,
@@ -48,7 +48,10 @@ $(document).ready(function() {
 				minlength:"Su número de teléfono debe tener al menos 10 digitos"
 			},
 			email: "Por favor, ingresa tu cuenta de correo",
-			lastname:"Por favor, ingresa tu apellido",
+			lastname:{
+				required:"Por favor, ingresa tu apellido",
+				minlength:"Escriba su apellido completo",
+			},
 			name: "Por favor, ingresa tu nombre de usuario",
 		},
 		highlight: function( label ) {
@@ -76,4 +79,36 @@ function showPassword() {
         document.getElementById("boton-password").innerHTML = "Mostrar contraseña";
         num = 0; // cambiamos num a 0 para indicar que la contraseña está oculta.
     }
+}
+
+//Usuarios en localStorage
+
+var listaDeUsuario = [];
+
+function addUsuarioToSystem(id,nombre,apellido,telefono,email,contrasena){
+	var nuevoUsuario ={
+		id:pid,
+		nombre : nombre,
+		apellido : apellido,
+		telefono :telefono,
+		email: email,
+		contrasena:contrasena,
+	};
+	console.log(nuevoUsuario);
+	listaDeUsuario.push(nuevoUsuario);
+	localStoragelistaDeUsuario(listaDeUsuario);
+}
+
+function obtenerListaDeUsuario(){
+	var storedlist=localStorage.getItem('localStoragelistaDeUsuario');
+	if(storedlist == null){
+		listaDeUsuario=[];
+	}else{
+		listaDeUsuario=JSON.parse(storedlist);
+	}
+	return listaDeUsuario;
+}
+
+function localStoragelistaDeUsuario(list){
+	localStorage.setItem('locallistaDeUsuarios', JSON.stringify(list));
 }
