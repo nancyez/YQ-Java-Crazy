@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canasta de compras</title>
+    <link rel="stylesheet" href="../styles/Compra.css">
+</head>
+<body>
+    <header class="productos">
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-pera.png" alt="" class="img-item">
+                    <span class="titulo-item">Mermelada de <br> Pera</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-Zarzamora .png" alt="" class="img-item">
+                    <span class="titulo-item">Mermelada de <br> Zarzamora</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Mermelada-de-ciruela.png" alt="" class="img-item">
+                    <span class="titulo-item">Mermelada de <br> Ciruela</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+            </div>
+        </section>
+        <h1 class="titulo-producto">Almibares</h1>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Almibar-de-pera.png" alt="" class="img-item">
+                    <span class="titulo-item">Peras en Almibar <br> 500ml</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Almibar-de-pera-grande.png" alt="" class="img-item">
+                    <span class="titulo-item">Peras en Almibar <br> 1L</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Duraznos-en-Almibar.png" alt="" class="img-item">
+                    <span class="titulo-item">Duraznos en <br>Almibar 1L</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+            </div>
+        </section>
+        <br>
+        <h1 class="titulo-producto">Licores</h1>
+        <br>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Licor-de-pera.png" alt="" class="img-item">
+                    <span class="titulo-item">Licor de <br> Pera</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Licor-de-pera.png" alt="" class="img-item">
+                    <span class="titulo-item">Licor de <br> Zarzamora</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+                <div class="item">
+                    <img src="../assest/img/ImgProductos/Licor-de-pera.png" alt="" class="img-item">
+                    <span class="titulo-item">Licor de <br> Ciruela</span>
+                    <span class="precio-item">$100.00</span>
+                    <button class="botton-item">Agregar a canasta</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Carrito de Compras -->
+        <div id="carrito-modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h2>Carrito de Compras</h2>
+                <div id="carrito-items">
+                    <!-- Aquí se agregarán los elementos del carrito -->
+                </div>
+                <p>Total: <span id="total-carrito">$0.00</span></p>
+                <button id="comprar-btn">Comprar</button>
+            </div>
+        </div>
+    </header>
+
+   <script src="../src/Compra.js"></script>
+</body>
+</html>

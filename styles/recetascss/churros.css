@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img-item {
+  max-width: 60%;
+  height: max-content;
+  object-fit: cover;
+  display: block; /* Añadimos esta propiedad para que el elemento se comporte como bloque */
+  margin: 0 auto; /* Centramos horizontalmente utilizando márgenes automáticos */
+}
+
+.titulo-pagina {
+  text-align: center;
+}
+
+.listado {
+  margin-top: 20px;
+  text-align: center; /* Alineamos el texto del listado al centro */
+}
+
+h2, h3 {
+  margin-top: 20px;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+.churro {
+  padding-top: 150px;
+}

@@ -1,0 +1,733 @@
+ * {
+  box-sizing: border-box;  
+}
+body {
+  font-size: 14px;
+  width: 100%;
+  position: absolute;
+}
+
+  
+.cuerpo1 {
+  width: 100%;
+  height: 2479px;
+  background: rgba(236,219,201,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.receta1 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_24.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 633px;
+  left: 121px;
+  overflow: hidden;
+}
+.redondeado1 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento1 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_22.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida1 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen1 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas1 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas1 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.receta2 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_51.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1364px;
+  left: 121px;
+  overflow: hidden;
+}
+.redondeado2 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento2 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_53.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida2 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen2 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas2 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas2 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.receta3 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_30.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 633px;
+  left: 731px;
+  overflow: hidden;
+}
+.redondeado3 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento3 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_32.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida3 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen3 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas3 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas3 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.receta4 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_58.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 633px;
+  left: 731px;
+  overflow: hidden;
+}
+.redondeado4 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento4 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_60.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida4 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen4 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas4 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas4 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.receta5 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_44.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 633px;
+  left: 1341px;
+  overflow: hidden;
+}
+.redondeado5 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento5 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_46.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida5 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen5 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas5 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas5 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v94_65 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_65.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1364px;
+  left: 731px;
+  overflow: hidden;
+}
+.v94_66 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.v94_67 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_67.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.v94_68 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.v94_69 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.v94_70 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.v94_71 {
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.receta6 {
+  width: 430px;
+  height: 564px;
+  background: url("../images/v94_72.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1364px;
+  left: 1341px;
+  overflow: hidden;
+}
+.redondeado6 {
+  width: 430px;
+  height: 564px;
+  background: rgba(164,194,203,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+  overflow: hidden;
+}
+.espaciamiento6 {
+  width: 430px;
+  height: 260px;
+  background: url("../images/v94_74.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  overflow: hidden;
+}
+.comida6 {
+  width: 384px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 282px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+}
+.resumen6 {
+  width: 344px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 407px;
+  left: 44px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+.mas6 {
+  width: 123px;
+  height: 51px;
+  background: rgba(130,119,16,1);
+  opacity: 1;
+  position: absolute;
+  top: 490px;
+  left: 284px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.texmas6{
+  width: 92px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 501px;
+  left: 302px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+}
+
+.encabezado {
+  width: 100%;
+  height: 464px;
+  background: url("../images/v94_14.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 23px;
+  left: 0px;
+  overflow: hidden;
+}
+.v336_27 {
+  width: 100%;
+  height: 420px;
+  background: url("../images/v336_27.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  overflow: hidden;
+}
+/* .v94_12 {
+  width: 628px;
+  height: 464px;
+  background: url("../images/v94_12.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1395px;
+  overflow: hidden;
+} */
+.v92_6 {
+  width: 697px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 110px;
+  left: 621px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 165px;
+  opacity: 1;
+  text-align: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+@media (max-width: 280px) {
+  .encabezado{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  @media (max-width: 425px) {
+    #body,
+    #P2 .RecolectandoFruta img,
+    #P3 img {
+      max-width: 100%;
+    }
+  }

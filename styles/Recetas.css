@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+ /* display: flex;*/
+  justify-content: center;
+  align-items: center;
+  /*min-height: 100vh;*/
+  background: #ECDBC9;
+}
+
+.productos {
+  z-index: 1;
+  background: url(../assest/img/peras.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  padding-top: 120px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.titulo-pagina {
+  text-align: center;
+  /*font-size: 60px;*/
+  font-size: calc(1.2em + 6vw);
+  color: #fff9f3;
+  padding: 65px 30px;
+}
+
+.titulo-producto {
+  text-align: center;
+  font-size: calc(1.2em + 6vw);
+  color: #0E4950;
+  padding: 50px 30px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 90px;
+  color: #fff;
+  padding: 30px 30px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar{
+  z-index: 120;
+}
+.contenedor .contenedor-items {
+  z-index: 2;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  row-gap: 30px;
+  width: 100%;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  width: 300px;
+  height: 400px;
+  transition: all 0.5s ease-in;
+}
+
+.card .card_landing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 10px #000;
+  background: linear-gradient(transparent 80%, #000);
+  position: absolute;
+  object-fit: cover;
+}
+
+.card img {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 100;
+}
+
+.card .card_landing h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.card .card_info {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 15px;
+  background: #fff;
+  z-index: 90;
+  box-shadow: 0 5px 10px #000;
+  transition: .5s;
+}
+
+.card:hover .card_info {
+  left: 100%;
+}
+
+.card_info .head {
+  padding: 5px 0;
+  border-bottom: solid 1px #bc8811;
+}
+
+.card_info .head .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bc8811;
+}
+
+.card_info .head .description {
+  display: flex;
+  gap: 10px;
+}
+
+.card_info .head .description .item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.card_info .head .description .item i {
+  color: #bc8811;
+  font-size: 15px;
+}
+
+.card_info .head .description .item p {
+  font-size: 13px;
+}
+
+.card_info .content {
+  margin-top: 15px;
+}
+
+.card_info .content .list {
+  padding: 10px 15px;
+}
+
+.card_info .content .list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  background: #bc8811;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilos del modal */
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 150;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #0E4950;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  width: 80%;
+  max-width: 600px; 
+  box-sizing: border-box; 
+  position: relative; 
+  font-size: 28px;
+}
+
+/* Estilo para el botón "Cerrar" del modal */
+.close {
+  color: #CBA609;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #CBA609;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Texto dorado centrado */
+.modal-content p {
+  text-align: center;
+  color: #CBA609;
+}
+
+
+
+
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+  /* Estilos para la barra de navegación */
+  .Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas grandes */
+  }
+  
+  /* Estilos para los elementos de las recetas */
+  .item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 767px) {
+  /* Estilos para la barra de navegación */
+.Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas medianas */
+  }
+  
+  /* Estilos para los elementos de las recetas */
+.item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  /* Estilos para la barra de navegación */
+.Navbar {
+    /* Agrega los estilos que deseas para la barra de navegación en pantallas pequeñas */
+  }
+  
+  /* Estilos para los elementos de las recetas */
+.item {
+    /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-pagina{
+      padding-top: 120px;
+  }
+}

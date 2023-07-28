@@ -151,7 +151,7 @@ header label:hover {
 
 header h1{
     text-align: center;
-    font-size: 90px;
+    font-size: 40px;
     color: #fff;
     padding: 30px 30px;
 }
@@ -183,14 +183,14 @@ header h1{
     max-width: 230px;
     
     margin: auto;
-    border: 1px solid #666;
+    border: none;
     border-radius: 30px;
     padding: 20px 60px;
     transition: .3s;
-    background: #A4C2CB;
+    background: #fff9f3;
 }
 .contenedor-items .item:hover{
-    box-shadow:  0 0 10px #666;
+    box-shadow:  0 0 10px #CBA609;
     /*scale: 1.05;*/
     
 }
@@ -227,5 +227,61 @@ header h1{
     padding: 5px 15px;
     font-size: 16px;
     cursor: pointer;
+    
 }
-
+.contenedor-items .item .botton-item:active {
+        transform: scale(0.98);
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        /* Lowering the shadow */
+}
+@media screen and (max-width: 768px) {
+    .titulo-pagina{
+        padding-top: 120px;
+    }
+}
+/* Estilos del modal */
+.modal-p{
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #0E4950;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #f2f2f2;
+    width: 80%;
+    max-width: 600px; 
+    box-sizing: border-box; 
+    position: relative; 
+    font-size: 28px;
+  }
+  
+  /* Estilo para el botón "Cerrar" del modal */
+  .close {
+    color: #CBA609;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #CBA609;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Texto dorado centrado */
+  .modal-content p {
+    text-align: center;
+    color: #CBA609;
+  }

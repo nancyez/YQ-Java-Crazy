@@ -1,0 +1,140 @@
+/* Estilos generales */
+
+.compras-container {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  margin-top: 0%;
+  text-align: center;
+  justify-content: center;
+}
+
+.container-compras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contenedor-compras{
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+}
+
+h1 {
+  background: url(../assest/img/Miscompras.jpeg);
+  color: #fff9f3;
+  margin-top: 10%;
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(1.2em + 6vw);
+  background-size:cover;
+  background-position:center;
+  width: 110%;
+  height: 150px;
+  padding-top: 130px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.titulo-rm{
+  color: #0E4950;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  padding-bottom: 5%;
+  font-weight: bolder;
+}
+
+
+.compra-item {
+  border-radius: 10px;
+  color:#0E4950; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  background-color: #fff9f3;
+  box-shadow: 0px 0px 20px 0px #CBA609;
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr .5fr;
+  align-items: center;
+}
+
+.compra-item span {
+  padding: 5px;
+}
+
+.compra-item span:first-child {
+  font-weight: bold;
+}
+
+.compra-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encabezado-compras {
+  font-weight: bold;
+  display: flex;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.producto-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1.5px solid #CBA609;
+  margin-bottom: 15px;
+}
+
+.producto-info span:nth-child(1),
+.producto-info span:nth-child(2),
+.producto-info span:nth-child(3),
+.producto-info span:nth-child(4) {
+  flex: 100;
+  text-align: center;
+  min-width: 90px;
+}
+
+/* Estilos para hacer la página responsiva */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.2em + 8vw);
+    padding-top: 150px;
+  }
+
+  .titulo-rm {
+    font-size: 30px;
+  }
+  
+
+  .contenedor-compras {
+    width: 90%;
+  }
+  .encabezado-compras{
+    font-size: 120%;
+  }
+
+  .producto-info span:nth-child(1),
+  .producto-info span:nth-child(2),
+  .producto-info span:nth-child(3),
+  .producto-info span:nth-child(4) {
+    min-width: 100px;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+

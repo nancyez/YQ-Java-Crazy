@@ -1,40 +1,38 @@
 /*Navbar Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-
-}
-
 body{
    
     background-size:contain;
     background-color: #ECDBC9;
     background-repeat:initial;
     background-position: center;
-    position:relative;
-    font-family: 'Montserrat';
+    position: relative;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 
-#navbarNav,.container{
-      
+#navbarNav,.contenedor-nav{
+    
     justify-content: center;
-    align-items: center;
+    align-items:center;
     text-align: center;
     background-color: #0E4950;
 }
 
 .logo{
     justify-content: center;
-}
+  }  
+.logo:hover{
+        scale: 1.05;
+        transition-duration: 0.5s;
+    }
 
 hr.new1 {
-    border: 1px solid  #CBA609;
+    border: 2px solid  #CBA609;
+    margin: 0px;
+    opacity: 1;
   }
 a .icon:hover{
     
@@ -45,9 +43,10 @@ a .icon:hover{
   
 
 .Navbar {
-  position:fixed;
+    position:fixed;
     width: 100%;
     background: #0E4950;
+    z-index: 100;
 }
 
 #btn-menu {
@@ -62,7 +61,7 @@ header label {
     border-right: 1px solid #CBA609;
 }
 
-header label:hover {
+header .navicono :hover {
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
@@ -119,6 +118,5 @@ header label:hover {
         margin: 0;
     }
 }
-
 
 /*Productos*/
