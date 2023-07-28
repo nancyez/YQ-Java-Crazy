@@ -46,7 +46,7 @@
     <div class="row">
     
     <div class="col-11 col-md-5 container1 p-sm-3 p-md-4 p-lg-5 p-xl-4 py-4">
-        <form action="registrar nuevos usuarios" method="post" name="registro-form" id="registro-form" role="form">
+        <form action="../pages/Login.html" method="GET" name="registro-form" id="registro-form" role="form">
             <h1 class="fw-bold text-center py-4">Registro</h1>
             <div class="form-group">
                 <label for="name" class="form-label">Nombre</label>
@@ -67,7 +67,7 @@
             <div class="form-group">
                 <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control-plaintext" id="password1" name="password">
-                <button id="boton-password" onclick="showPassword(this)">Mostrar contraseña</button>
+                <button type="button" id="boton-password" onclick="showPassword(this)">Mostrar contraseña</button>
             </div>
             <div class="d-grid">
                 <button type="submit" class="btn btn-outline-primary" id="boton">REGISTRAR</button>

@@ -51,8 +51,7 @@ $(document).ready(function() {
 
 });
 
-// funcion mostrar password
-
+// función mostrar password
 let num = 0;
 
 function showPassword() {
@@ -66,3 +65,8 @@ function showPassword() {
         num = 0; // Cambiamos num a 0 para indicar que la contraseña está oculta.
     }
 }
+
+
+
+
+

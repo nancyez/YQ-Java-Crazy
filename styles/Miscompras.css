@@ -25,12 +25,12 @@
 h1 {
   background: url(../assest/img/Miscompras.jpeg);
   color: #fff9f3;
-  margin-top: 13%;
+  margin-top: 10%;
   font-family: 'Poppins', sans-serif;
   font-size: calc(1.2em + 6vw);
   background-size:cover;
   background-position:center;
-  width: 100%;
+  width: 110%;
   height: 150px;
   padding-top: 130px;
   object-fit: cover;

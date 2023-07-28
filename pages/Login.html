@@ -54,7 +54,7 @@
             
             <!--Inicia formulario-->
   
-            <form action="#" method="POST" name="login-form" id="login-form" role="form"><!--Queda pendiente para conectarlo con la base de datos -->
+            <form action="../pages/MisCompras.html" method="GET" name="login-form" id="login-form" role="form"><!--Queda pendiente para conectarlo con la base de datos -->
                 <div class="form-group">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="email" class="form-control-plaintext"  id="email" name="email">
@@ -62,7 +62,7 @@
                 <div class="form-group">
                     <label for="password" class="form-label">Contraseña</label>
                     <input type="password" class="form-control-plaintext"  id="password" name="password">
-                    <button id="boton-muestra" onclick="showPassword(this)">Mostrar contraseña</button>
+                    <button type="button" id="boton-muestra" onclick="showPassword(this)">Mostrar contraseña</button>
                 </div>
                 <div class="form-check">
                     <input type="checkbox" name="connected" class="form-check-input" id="checkbox" >
