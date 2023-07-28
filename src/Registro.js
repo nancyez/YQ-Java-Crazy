@@ -81,34 +81,36 @@ function showPassword() {
     }
 }
 
-//Usuarios en localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    // Obtenemos el formulario por su ID
+    const form = document.getElementById("registro-form");
 
-var listaDeUsuario = [];
+    // Añadimos el evento de escucha al formulario
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Evitamos que el formulario se envíe de forma tradicional
 
-function addUsuarioToSystem(id,nombre,apellido,telefono,email,contrasena){
-	var nuevoUsuario ={
-		id:pid,
-		nombre : nombre,
-		apellido : apellido,
-		telefono :telefono,
-		email: email,
-		contrasena:contrasena,
-	};
-	console.log(nuevoUsuario);
-	listaDeUsuario.push(nuevoUsuario);
-	localStoragelistaDeUsuario(listaDeUsuario);
-}
+      // Obtenemos los valores de los campos del formulario
+      const name = document.getElementById("name").value;
+      const lastname = document.getElementById("lastname").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password1").value;
 
-function obtenerListaDeUsuario(){
-	var storedlist=localStorage.getItem('localStoragelistaDeUsuario');
-	if(storedlist == null){
-		listaDeUsuario=[];
-	}else{
-		listaDeUsuario=JSON.parse(storedlist);
-	}
-	return listaDeUsuario;
-}
+      // Creamos un objeto con los datos del formulario
+      const formData = {
+        user: name,
+        lastname: lastname,
+        phone: phone,
+        email: email,
+        password: password,
+      };
 
-function localStoragelistaDeUsuario(list){
-	localStorage.setItem('locallistaDeUsuarios', JSON.stringify(list));
-}
+      // Convertimos el objeto a formato JSON y lo guardamos en LocalStorage
+      localStorage.setItem("formData", JSON.stringify(formData));
+
+      // Redireccionar a otra página o realizar otras acciones después de guardar los datos
+      window.location.href = "../pages/Login.html";
+    });
+  });
+
+
