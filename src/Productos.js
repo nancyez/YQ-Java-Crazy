@@ -7,8 +7,11 @@ const totalCarrito = document.getElementById('total-carrito');
 const comprarBtn = document.getElementById('comprar-btn');
 const eliminarAllBtn = document.getElementById('eliminar-all-btn');
 
+// Recuperar datos del carrito almacenados en localStorage (si existen)
+const carritoProductos = JSON.parse(localStorage.getItem('carrito')) || [];
+
 // Array para mantener los productos en el carrito
-const carritoProductos = [];
+//const carritoProductos = [];
 
 // Evento listener
 botonesAgregar.forEach((boton) => {
@@ -17,7 +20,7 @@ botonesAgregar.forEach((boton) => {
 
 cerrarModal.addEventListener('click', cerrarCarritoModal);
 comprarBtn.addEventListener('click', comprar);
-eliminarAllBtn.addEventListener('click', vaciarCarrito);
+eliminarAllBtn.addEventListener('click', eliminarTodoCarrito);
 
 
 // Función para agregar un producto al carrito
@@ -45,7 +48,11 @@ function agregarAlCarrito(event) {
   actualizarCarritoVisual();
 
   modalCarrito.style.display = 'block';
+  
+  guardarCarritoEnLocalStorage();
 }
+
+
 
 // Función para eliminar un producto del carrito
 function eliminarDelCarrito(event) {
@@ -64,8 +71,15 @@ function eliminarDelCarrito(event) {
       carritoProductos.splice(index, 1);
     }
   }
+  
   // Actualizamos el carrito visualmente
   actualizarCarritoVisual();
+  guardarCarritoEnLocalStorage();
+}
+
+// Función para guardar el carrito en localStorage
+function guardarCarritoEnLocalStorage() {
+  localStorage.setItem('carrito', JSON.stringify(carritoProductos));
 }
 
 // Función para actualizar el carrito visualmente
@@ -93,10 +107,20 @@ function actualizarCarritoVisual() {
     nuevoItem.innerHTML = `
       <span>${producto.titulo}</span>
       <span>$${producto.precio.toFixed(2)}</span>
-      <span>${producto.cantidad}</span>
+      <div class="contador">
+        <button class="contador-btn" data-titulo="${producto.titulo}" data-action="decrease">-</button>
+        <span>${producto.cantidad}</span>
+        <button class="contador-btn" data-titulo="${producto.titulo}" data-action="increase">+</button>
+      </div>
       <span>$${(producto.precio * producto.cantidad).toFixed(2)}</span>
       <button class="eliminar-btn" data-titulo="${producto.titulo}"><i class="fas fa-trash-alt"></i></button>
     `;
+
+    // Eventos clic para los botones contadores
+    const contadorBtns = nuevoItem.querySelectorAll('.contador-btn');
+    contadorBtns.forEach((btn) => {
+      btn.addEventListener('click', cambiarCantidad);
+    });
 
     const botonEliminar = nuevoItem.querySelector('.eliminar-btn');
     botonEliminar.addEventListener('click', eliminarDelCarrito);
@@ -108,11 +132,36 @@ function actualizarCarritoVisual() {
 
   totalCarrito.textContent = '$' + total.toFixed(2);
 }
+// Función para cambiar la cantidad de un producto en el carrito
+function cambiarCantidad(event) {
+  const boton = event.target;
+  const titulo = boton.dataset.titulo;
+  const action = boton.dataset.action;
+
+  const productoExistente = carritoProductos.find((producto) => producto.titulo === titulo);
+  if (productoExistente) {
+    if (action === 'increase') {
+      productoExistente.cantidad++;
+    } else if (action === 'decrease') {
+      if (productoExistente.cantidad > 1) {
+        productoExistente.cantidad--;
+      } else {
+        const index = carritoProductos.indexOf(productoExistente);
+        carritoProductos.splice(index, 1);
+      }
+    }
+  }
+
+  actualizarCarritoVisual();
+  guardarCarritoEnLocalStorage();
+}
 
 // Función para eliminar todo el contenido del carrito
 function eliminarTodoCarrito() {
   carritoProductos.length = 0;
   actualizarCarritoVisual();
+  guardarCarritoEnLocalStorage();
+  localStorage.removeItem('carrito'); // Eliminar el carrito del LocalStorage
 }
 
 // Función para cerrar el modal del carrito
@@ -120,8 +169,8 @@ function cerrarCarritoModal() {
   modalCarrito.style.display = 'none';
 }
 
+// Lógica para procesar la compra
 function comprar() {
-  // Lógica para procesar la compra
 
   // Reiniciar carrito
   carritoProductos.length = 0; // Limpiar el array de productos
@@ -144,6 +193,8 @@ function vaciarCarrito() {
   // Cerramos el carrito modal
   cerrarCarritoModal();
 }
+
+
 
 
 
