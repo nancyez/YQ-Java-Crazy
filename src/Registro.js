@@ -17,11 +17,16 @@ $(document).ready(function() {
 		rules: {
 			name: {
 				required: true,
-				minlength: 5
+				minlength: 6
 			},
 			lastname:{
 				required: true,
 				minlength: 10
+			},
+			phone:{
+				required:true,
+				number:true,
+				minlength:10
 			},
 			email: {
 				required: true,
@@ -36,6 +41,11 @@ $(document).ready(function() {
 			password: {
 				required: "Proporciona tu contraseña",
 				minlength: "Su contraseña debe tener al menos 6 caracteres"
+			},
+			phone:{
+				required:"Proporciona tu número de teléfono",
+				number:"Ingresa solo dígitos",
+				minlength:"Su número de teléfono debe tener al menos 10 digitos"
 			},
 			email: "Por favor, ingresa tu cuenta de correo",
 			lastname:"Por favor, ingresa tu apellido",
@@ -58,12 +68,12 @@ let num = 0;
 
 function showPassword() {
     if (num == 0) {
-        document.getElementById("password").type = "text";
-        document.getElementById("btn-password").innerHTML = "Ocultar contraseña";
+        document.getElementById("password1").type = "text";
+        document.getElementById("boton-password").innerHTML = "Ocultar contraseña";
         num = 1; // cambiamos num a 1 para indicar que la contraseña está visible.
     } else {
-        document.getElementById("password").type = "password";
-        document.getElementById("btn-password").innerHTML = "Mostrar contraseña";
+        document.getElementById("password1").type = "password";
+        document.getElementById("boton-password").innerHTML = "Mostrar contraseña";
         num = 0; // cambiamos num a 0 para indicar que la contraseña está oculta.
     }
 }

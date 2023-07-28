@@ -45,7 +45,7 @@
 <section class="container w-75 m-5">
     <div class="row">
     <div class="col-1 col-md-5"></div>
-    <div class="col-10 col-md-5 container1 p-sm-3 p-lg-5">
+    <div class="col-11 col-md-5 container1 p-sm-3 p-md-4 p-lg-5 p-xl-4 py-4">
         <form action="registrar nuevos usuarios" method="post" name="registro-form" id="registro-form" role="form">
             <h1 class="fw-bold text-center py-4">Registro</h1>
             <div class="form-group">
@@ -57,13 +57,17 @@
                 <input type="lastname" class="form-control-plaintext" id="lastname" name="lastname">
             </div>
             <div class="form-group">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="phone" class="form-control-plaintext" id="phone" name="phone">
+            </div>
+            <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control-plaintext" id="email" name="email">
             </div>
             <div class="form-group">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control-plaintext" id="password" name="password">
-                <button id="btn-password" onclick="showPassword(this)">Mostrar contraseña</button>
+                <input type="password" class="form-control-plaintext" id="password1" name="password">
+                <button id="boton-password" onclick="showPassword(this)">Mostrar contraseña</button>
             </div>
             <div class="d-grid">
                 <button type="submit" class="btn btn-outline-primary" id="boton">REGISTRAR</button>
