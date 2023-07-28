@@ -4,9 +4,11 @@
     font-family:'Poppins', sans-serif;
     color: #0e4950;
     font-size: 20px;
+    padding-right: 0; 
+    padding-left: 0;
 }
 *, ::after, ::before {
- box-sizing:unset;
+ box-sizing:content-box;
 }
 
 .bg{

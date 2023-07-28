@@ -20,7 +20,9 @@
     margin: 0 5% 0 5%;
     width: 30%;
 }
-
+*, ::after, ::before {
+    box-sizing:content-box;
+}
 h1{
     font-size:40px;
 }
@@ -86,4 +88,6 @@ h1{
 .help-block {
     color: #cc3333
 }
-
+.row{
+    justify-content: center;
+}

@@ -178,6 +178,10 @@ header h1 {
   margin-top: 10px;
 }
 
+
+
+
+
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 768px) {
   /* Estilos para la barra de navegación */
@@ -214,5 +218,10 @@ header h1 {
   /* Estilos para los elementos de las recetas */
 .item {
     /* Agrega los estilos que deseas para los elementos de las recetas en pantallas pequeñas */
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo-pagina{
+      padding-top: 120px;
   }
 }

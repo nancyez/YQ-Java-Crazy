@@ -9,13 +9,13 @@
 }
 
 .carrousel-slide {
-  width: 200%;
+  width: 170%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10em 0em 0 10em;
-  gap: 9em;
+  padding: 10em 0em 0 13em;
+  gap: 10em;
   transition: all .3s ease;
   transform: translateX(0%);
 }
@@ -56,24 +56,27 @@
 }
 
 /* imagen popocatepetl */
-.img-section {
+/* .img-section {
   max-width: 100%;
   height: auto;
   position: relative;
-  display: inline-block;
+ display: inline-block;
   padding: 2em 0 0 3em;
+}*/
+.img-section{
+ text-align: center;
 }
 
 .img-container {
   width: 100%;
-  height: auto;
+ /* height: auto;*/
   display: block;
-  margin: 0 100px;
+  /*margin: 0 100px;*/
 }
 
 .img-home {
-  width: 700px;
-  height: 600px;
+  width: auto;
+  /*height: auto;*/
 }
 
 .texto {
@@ -84,9 +87,9 @@
   width: 100%;
   height: 40%;
   font-size: 30px;
-  left: 73%;
+  /*left: 73%;
   top: 95%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
 /* inicia Swiper productos */
@@ -155,16 +158,39 @@
   text-align: center;
   color: #0E4950;
 }
-
+.contenedor-volcan{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.volcan{
+  width: 100%
+}
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+color: #fff9f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .carrousel-slide {
-    padding: 5em 0 0 1em;
-    gap: 6em;
+    padding: 6em 0px 0px 4em;
+    gap: 5em;
+    padding-top: 150px;
   }
-
+  .contenedor-volcan{
+    width: 90%;
+  }
+  .texto-encima{
+    width: 90%;
+  }
   .carrousel .img {
-    width: calc(100% - 4em);
+    width: 43%;
     min-height: 20vh;
     height: auto;
   }
@@ -183,10 +209,10 @@
   }
 
   .swiper {
-    width: 100%;
+    width: 50%;
   }
 }
-
+/*
 @media screen and (min-width: 601px) and (max-width: 780px) {
   .carrousel-slide {
     padding: 5em 0 0 3em;
@@ -276,3 +302,4 @@
     width: 100%;
   }
 }
+*/
