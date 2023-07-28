@@ -56,7 +56,7 @@ h1{
     position: relative;
 }
 
-#btn-password{
+#show-password{
     background: #fff9f3;
     color: #0e4950;
     outline: none;
@@ -64,8 +64,8 @@ h1{
     margin-bottom: 3%;
 }
 
-#btn-password:hover,
-#btn-password:focus{
+#show-password:hover,
+#show-password:focus{
     border: 0;
     outline: none;
     background: #fff9f3;
