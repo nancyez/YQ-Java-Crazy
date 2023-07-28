@@ -7,11 +7,8 @@ const totalCarrito = document.getElementById('total-carrito');
 const comprarBtn = document.getElementById('comprar-btn');
 const eliminarAllBtn = document.getElementById('eliminar-all-btn');
 
-// Recuperar datos del carrito almacenados en localStorage (si existen)
+// Recuperar datos del carrito almacenados en localStorage
 const carritoProductos = JSON.parse(localStorage.getItem('carrito')) || [];
-
-// Array para mantener los productos en el carrito
-//const carritoProductos = [];
 
 // Evento listener
 botonesAgregar.forEach((boton) => {
@@ -167,6 +164,7 @@ function eliminarTodoCarrito() {
 // Función para cerrar el modal del carrito
 function cerrarCarritoModal() {
   modalCarrito.style.display = 'none';
+  
 }
 
 // Lógica para procesar la compra
