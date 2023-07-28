@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
 
 .container{
-    width: 100%;
+    width: 87%;
 }
 .container1{
     font-family:'Poppins', 'sans-serif';
@@ -99,4 +99,6 @@ h1{
 }
 .row{
     justify-content: center;
+    padding-bottom: 50px;
+    
 }
