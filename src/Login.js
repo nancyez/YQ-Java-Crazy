@@ -30,7 +30,7 @@ $(document).ready(function() {
 			Passwd: {
 				required: true,
 				minlength: 5
-			}
+			},	
 		},
 		messages: {
 			Passwd: {
@@ -65,4 +65,17 @@ function showPassword() {
         document.getElementById("btn-password").innerHTML = "Mostrar contraseña";
         num = 0; // Cambiamos num a 0 para indicar que la contraseña está oculta.
     }
+}
+
+// Usuarios guardados
+
+const listaDeUsuarios= [];
+
+function addUsuariotoSystem(){
+	const nuevoUsuario = {
+		id:id,
+		name:name,
+
+
+	}
 }
