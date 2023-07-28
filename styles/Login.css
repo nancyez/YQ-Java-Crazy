@@ -46,7 +46,7 @@ h1{
     border-bottom: 1px solid #CBA609;
 }
 
-#Passwd {
+#password{
     background: none;
     color: #0e4950;
     font-size: 1em;
@@ -56,12 +56,12 @@ h1{
     position: relative;
 }
 
-#show-password{
+#boton-muestra{
     background: #fff9f3;
     color: #0e4950;
     outline: none;
     border: 0;
-    margin-bottom: 3%;
+    margin-bottom:3%;
 }
 
 #show-password:hover,
@@ -74,7 +74,7 @@ h1{
 
 .form-check-input{
     border:1px solid #CBA609;
-
+    margin-bottom:8%;
 }
 
 #boton{
