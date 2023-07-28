@@ -50,7 +50,20 @@ $(document).ready(function() {
 			label.remove();
 		}
 	});
-
-	
-
 });
+
+// Función para mostrar el modal
+function openModal() {
+	document.getElementById('modal').style.display = 'block';
+  }
+  
+  // Función para ocultar el modal
+  function closeModal() {
+	document.getElementById('modal').style.display = 'none';
+  }
+  
+  // Evento para mostrar el modal al enviar el formulario
+  document.getElementById('contacto-form').addEventListener('submit', function (event) {
+	event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+	openModal();
+  });
