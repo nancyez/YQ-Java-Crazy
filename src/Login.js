@@ -58,11 +58,11 @@ let num = 0;
 function showPassword() {
     if (num == 0) {
         document.getElementById("Passwd").type = "text";
-        document.getElementById("btn-password").innerHTML = "Ocultar contraseña";
+        document.getElementById("show-password").innerHTML = "Ocultar contraseña";
         num = 1; // Cambiamos num a 1 para indicar que la contraseña está visible.
     } else {
         document.getElementById("Passwd").type = "password";
-        document.getElementById("btn-password").innerHTML = "Mostrar contraseña";
+        document.getElementById("show-password").innerHTML = "Mostrar contraseña";
         num = 0; // Cambiamos num a 0 para indicar que la contraseña está oculta.
     }
 }
