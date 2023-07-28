@@ -10,10 +10,12 @@ function mostrarCompras() {
     const nuevoItem = document.createElement('div');
     nuevoItem.classList.add('carrito-item');
     nuevoItem.innerHTML = `
-      <span>${producto.titulo}</span>
-      <span>$${producto.precio.toFixed(2)}</span>
-      <span>${producto.cantidad}</span>
-      <span>$${(producto.precio * producto.cantidad).toFixed(2)}</span>
+      <div class="producto-info">
+        <span>${producto.titulo}</span>
+        <span>$${producto.precio.toFixed(2)}</span>
+        <span>${producto.cantidad}</span>
+        <span>$${(producto.precio * producto.cantidad).toFixed(2)}</span>
+      </div>
     `;
 
     comprasItems.appendChild(nuevoItem);
